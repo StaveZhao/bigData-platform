@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/bigData-auth/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bigData-common/bigData-common-core/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bigData-common/bigData-common-database/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bigData-common/bigData-common-dictionary/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bigData-common/bigData-common-jasperreport/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bigData-common/bigData-common-log/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bigData-common/bigData-common-mybatis/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bigData-common/bigData-common-office/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bigData-common/bigData-common-qrcode/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bigData-common/bigData-common-rabbitmq/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bigData-common/bigData-common-redis/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bigData-common/bigData-common-security/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bigData-common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bigData-config/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bigData-eureka/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bigData-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bigData-modules/file-service-parent/file-service-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bigData-modules/file-service-parent/file-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bigData-modules/file-service-parent/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bigData-modules/quartz-service-parent/quartz-service-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bigData-modules/quartz-service-parent/quartz-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bigData-modules/quartz-service-parent/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bigData-modules/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bigData-modules/system-service-parent/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bigData-modules/system-service-parent/system-service-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bigData-modules/system-service-parent/system-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bigData-tools/bigData-tool-monitor/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bigData-tools/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../src/main/resources" charset="UTF-8" />
+  </component>
+</project>

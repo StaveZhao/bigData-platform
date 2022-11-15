@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>bigData-platform</artifactId>
+        <groupId>com.zwd</groupId>
+        <version>1.0.0</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <packaging>pom</packaging>
+    <version>1.0.0</version>
+    <artifactId>bigData-common</artifactId>
+
+    <modules>
+        <module>bigData-common-core</module>
+        <module>bigData-common-redis</module>
+        <module>bigData-common-security</module>
+        <module>bigData-common-mybatis</module>
+        <module>bigData-common-database</module>
+        <module>bigData-common-office</module>
+        <module>bigData-common-rabbitmq</module>
+        <module>bigData-common-log</module>
+        <module>bigData-common-dictionary</module>
+        <module>bigData-common-jasperreport</module>
+        <module>bigData-common-qrcode</module>
+    </modules>
+
+
+
+</project>

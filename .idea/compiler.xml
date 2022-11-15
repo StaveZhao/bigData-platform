@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="bigData-eureka" />
+        <module name="bigData-common-redis" />
+        <module name="system-service-api" />
+        <module name="system-service" />
+        <module name="bigData-tool-monitor" />
+        <module name="file-service-api" />
+        <module name="bigData-gateway" />
+        <module name="file-service" />
+        <module name="quartz-service" />
+        <module name="bigData-auth" />
+        <module name="bigData-common-mybatis" />
+        <module name="bigData-common-rabbitmq" />
+        <module name="bigData-common-security" />
+        <module name="bigData-common-log" />
+        <module name="bigData-common-dictionary" />
+        <module name="bigData-config" />
+        <module name="bigData-common-core" />
+        <module name="bigData-common-database" />
+        <module name="quartz-service-api" />
+        <module name="bigData-common-qrcode" />
+        <module name="bigData-common-jasperreport" />
+        <module name="bigData-common-office" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="bigData-auth" options="-parameters" />
+      <module name="bigData-common" options="" />
+      <module name="bigData-common-core" options="-parameters" />
+      <module name="bigData-common-database" options="-parameters" />
+      <module name="bigData-common-dictionary" options="-parameters" />
+      <module name="bigData-common-jasperreport" options="-parameters" />
+      <module name="bigData-common-log" options="-parameters" />
+      <module name="bigData-common-mybatis" options="-parameters" />
+      <module name="bigData-common-office" options="-parameters" />
+      <module name="bigData-common-qrcode" options="-parameters" />
+      <module name="bigData-common-rabbitmq" options="-parameters" />
+      <module name="bigData-common-redis" options="-parameters" />
+      <module name="bigData-common-security" options="-parameters" />
+      <module name="bigData-config" options="-parameters" />
+      <module name="bigData-eureka" options="-parameters" />
+      <module name="bigData-gateway" options="-parameters" />
+      <module name="bigData-modules" options="" />
+      <module name="bigData-platform" options="" />
+      <module name="bigData-tool-monitor" options="-parameters" />
+      <module name="bigData-tools" options="" />
+      <module name="file-service" options="-parameters" />
+      <module name="file-service-api" options="-parameters" />
+      <module name="file-service-parent" options="" />
+      <module name="quartz-service" options="-parameters" />
+      <module name="quartz-service-api" options="-parameters" />
+      <module name="quartz-service-parent" options="" />
+      <module name="system-service" options="-parameters" />
+      <module name="system-service-api" options="-parameters" />
+      <module name="system-service-parent" options="" />
+    </option>
+  </component>
+</project>

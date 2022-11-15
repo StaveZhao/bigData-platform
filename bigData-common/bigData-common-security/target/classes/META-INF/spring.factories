@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.bigData.common.security.config.DataSecurityProtectConfig,\
+  com.bigData.common.security.feign.FeignOkHttpConfig

@@ -1,0 +1,5 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.bigData.service.system.api.feign.factory.LogServiceFeignFallbackFactory,\
+  com.bigData.service.system.api.feign.factory.UserServiceFeignFallbackFactory,\
+  com.bigData.service.system.api.feign.fallback.LogServiceFeignFallbackImpl,\
+  com.bigData.service.system.api.feign.fallback.UserServiceFeignFallbackImpl

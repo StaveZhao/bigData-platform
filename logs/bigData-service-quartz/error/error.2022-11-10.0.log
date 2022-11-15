@@ -1,0 +1,178 @@
+2022-11-10 17:07:38 ERROR bigData-service-quartz main org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2022-11-10 17:10:43 ERROR bigData-service-quartz main org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2022-11-10 17:13:00 ERROR bigData-service-quartz main org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2022-11-10 17:20:30 ERROR bigData-service-quartz main com.bigData.service.quartz.quartz.utils.ScheduleUtil 全局异常信息ex=Couldn't retrieve trigger: cn.datax.service.quartz.api.entity.QrtzJobEntity, StackTrace=org.quartz.JobPersistenceException: Couldn't retrieve trigger: cn.datax.service.quartz.api.entity.QrtzJobEntity [See nested exception: java.lang.ClassNotFoundException: cn.datax.service.quartz.api.entity.QrtzJobEntity]
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.retrieveTrigger(JobStoreSupport.java:1538)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$12.execute(JobStoreSupport.java:1527)
+	at org.quartz.impl.jdbcjobstore.JobStoreCMT.executeInLock(JobStoreCMT.java:245)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.executeWithoutLock(JobStoreSupport.java:3800)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.retrieveTrigger(JobStoreSupport.java:1524)
+	at org.quartz.core.QuartzScheduler.getTrigger(QuartzScheduler.java:1505)
+	at org.quartz.impl.StdScheduler.getTrigger(StdScheduler.java:508)
+	at com.bigData.service.quartz.quartz.utils.ScheduleUtil.init(ScheduleUtil.java:187)
+	at com.bigData.service.quartz.config.StartedUpRunner.run(StartedUpRunner.java:40)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:786)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:776)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.bigData.service.quartz.BigDataQuartzApplication.main(BigDataQuartzApplication.java:12)
+Caused by: java.lang.ClassNotFoundException: cn.datax.service.quartz.api.entity.QrtzJobEntity
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:352)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at java.io.ObjectInputStream.resolveClass(ObjectInputStream.java:720)
+	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1925)
+	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1808)
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2099)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1625)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:465)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:423)
+	at java.util.HashMap.readObject(HashMap.java:1412)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at java.io.ObjectStreamClass.invokeReadObject(ObjectStreamClass.java:1184)
+	at java.io.ObjectInputStream.readSerialData(ObjectInputStream.java:2235)
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2126)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1625)
+	at java.io.ObjectInputStream.defaultReadFields(ObjectInputStream.java:2344)
+	at java.io.ObjectInputStream.readSerialData(ObjectInputStream.java:2268)
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2126)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1625)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:465)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:423)
+	at org.quartz.impl.jdbcjobstore.StdJDBCDelegate.getObjectFromBlob(StdJDBCDelegate.java:3201)
+	at org.quartz.impl.jdbcjobstore.StdJDBCDelegate.selectTrigger(StdJDBCDelegate.java:1780)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.retrieveTrigger(JobStoreSupport.java:1536)
+	... 14 more
+
+2022-11-10 17:20:30 ERROR bigData-service-quartz main com.netflix.discovery.DiscoveryClient Saw local status change event StatusChangeEvent [timestamp=1668072030885, current=DOWN, previous=UP]
+2022-11-10 17:20:33 ERROR bigData-service-quartz main org.springframework.boot.SpringApplication Application run failed
+java.lang.IllegalStateException: Failed to execute ApplicationRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:789)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:776)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.bigData.service.quartz.BigDataQuartzApplication.main(BigDataQuartzApplication.java:12)
+Caused by: com.bigData.common.exception.DataException: 创建定时任务失败
+	at com.bigData.service.quartz.quartz.utils.ScheduleUtil.createScheduleJob(ScheduleUtil.java:95)
+	at com.bigData.service.quartz.quartz.utils.ScheduleUtil.init(ScheduleUtil.java:193)
+	at com.bigData.service.quartz.config.StartedUpRunner.run(StartedUpRunner.java:40)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:786)
+	... 5 common frames omitted
+Caused by: org.quartz.ObjectAlreadyExistsException: Unable to store Job : 'DEFAULT.__QUARTZ_TASK_KEY__1346347501890191362', because one already exists with this identification.
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.storeJob(JobStoreSupport.java:1113)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$2.executeVoid(JobStoreSupport.java:1067)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$VoidTransactionCallback.execute(JobStoreSupport.java:3780)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$VoidTransactionCallback.execute(JobStoreSupport.java:3778)
+	at org.quartz.impl.jdbcjobstore.JobStoreCMT.executeInLock(JobStoreCMT.java:245)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.storeJobAndTrigger(JobStoreSupport.java:1063)
+	at org.quartz.core.QuartzScheduler.scheduleJob(QuartzScheduler.java:855)
+	at org.quartz.impl.StdScheduler.scheduleJob(StdScheduler.java:249)
+	at com.bigData.service.quartz.quartz.utils.ScheduleUtil.createScheduleJob(ScheduleUtil.java:89)
+	... 8 common frames omitted
+2022-11-10 18:12:13 ERROR bigData-service-quartz SpringContextShutdownHook com.netflix.discovery.DiscoveryClient Saw local status change event StatusChangeEvent [timestamp=1668075133201, current=DOWN, previous=UP]
+2022-11-10 18:12:15 ERROR bigData-service-quartz DiscoveryClient-HeartbeatExecutor-0 com.netflix.discovery.DiscoveryClient DiscoveryClient_BIGDATA-SERVICE-QUARTZ/bogon:bigData-service-quartz:8813 - was unable to send heartbeat!
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:893)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1461)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2022-11-10 18:12:16 ERROR bigData-service-quartz SpringContextShutdownHook com.netflix.discovery.DiscoveryClient DiscoveryClient_BIGDATA-SERVICE-QUARTZ/bogon:bigData-service-quartz:8813 - de-registration failedCannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:972)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:948)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:347)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:177)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:242)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:235)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:403)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:142)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:258)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1092)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1085)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1061)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1030)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:170)
+	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:949)
