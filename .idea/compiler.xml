@@ -50,7 +50,7 @@
       <module name="bigData-eureka" options="-parameters" />
       <module name="bigData-gateway" options="-parameters" />
       <module name="bigData-modules" options="" />
-      <module name="bigData-platform" options="" />
+      <module name="bigData-platform" options="-parameters" />
       <module name="bigData-tool-monitor" options="-parameters" />
       <module name="bigData-tools" options="" />
       <module name="file-service" options="-parameters" />
