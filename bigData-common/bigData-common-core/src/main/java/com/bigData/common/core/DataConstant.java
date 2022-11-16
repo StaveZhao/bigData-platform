@@ -9,7 +9,7 @@ public class DataConstant {
         //请求头TOKEN名称
         TOKENHEADER("gatewayToken"),
         //请求头TOKEN值
-        TOKENVALUE("datax:gateway:123456"),
+        TOKENVALUE("bigData:gateway:123456"),
         //OAUTH2请求头
         AUTHORIZATION("Authorization"),
         //OAUTH2令牌类型
@@ -56,7 +56,7 @@ public class DataConstant {
      * 用户认证返回额外信息
      */
     public enum UserAdditionalInfo {
-        LICENSE("license", "datax"),
+        LICENSE("license", "bigData"),
         USER("user", "用户"),
         USERID("user_id", "用户ID"),
         USERNAME("username", "用户名"),

@@ -1,4 +1,0 @@
-com/bigData/common/redis/service/DistributedLock.class
-com/bigData/common/redis/serializer/DataRedisSerializer.class
-com/bigData/common/redis/service/RedisService.class
-com/bigData/common/redis/config/RedisConfig.class

@@ -1,5 +1,0 @@
-org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-  com.bigData.common.config.JacksonConfig,\
-  com.bigData.common.config.RestTemplateConfig,\
-  com.bigData.common.exception.GlobalExceptionHandler,\
-  com.bigData.common.utils.SpringContextHolder

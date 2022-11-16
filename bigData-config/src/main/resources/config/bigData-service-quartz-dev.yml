@@ -25,12 +25,12 @@ spring:
       driver-class-name: com.mysql.cj.jdbc.Driver
       username: root
       password: Beid@s0ft123456
-      url: jdbc:mysql://127.0.0.1:3306/data_cloud?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8
+      url: jdbc:mysql://127.0.0.1:3306/bigData_cloud?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8
     quartz:
       driver-class-name: com.mysql.cj.jdbc.Driver
       username: root
       password: Beid@s0ft123456
-      url: jdbc:mysql://127.0.0.1:3306/data_cloud_quartz?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8
+      url: jdbc:mysql://127.0.0.1:3306/bigData_cloud_quartz?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8
   quartz:
     job-store-type: jdbc
     jdbc:
