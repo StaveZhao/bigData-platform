@@ -17,6 +17,9 @@
     <file url="file://$PROJECT_DIR$/bigData-config/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/bigData-eureka/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/bigData-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bigData-modules/email-service-parent/email-service-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bigData-modules/email-service-parent/email-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bigData-modules/email-service-parent/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/bigData-modules/file-service-parent/file-service-api/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/bigData-modules/file-service-parent/file-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/bigData-modules/file-service-parent/src/main/java" charset="UTF-8" />

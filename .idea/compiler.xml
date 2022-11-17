@@ -12,6 +12,7 @@
         <module name="system-service" />
         <module name="bigData-tool-monitor" />
         <module name="file-service-api" />
+        <module name="email-service-api" />
         <module name="bigData-gateway" />
         <module name="file-service" />
         <module name="quartz-service" />
@@ -21,6 +22,7 @@
         <module name="bigData-common-security" />
         <module name="bigData-common-log" />
         <module name="bigData-common-dictionary" />
+        <module name="email-service" />
         <module name="bigData-config" />
         <module name="bigData-common-core" />
         <module name="bigData-common-database" />
@@ -50,9 +52,12 @@
       <module name="bigData-eureka" options="-parameters" />
       <module name="bigData-gateway" options="-parameters" />
       <module name="bigData-modules" options="" />
-      <module name="bigData-platform" options="-parameters" />
+      <module name="bigData-platform" options="" />
       <module name="bigData-tool-monitor" options="-parameters" />
       <module name="bigData-tools" options="" />
+      <module name="email-service" options="-parameters" />
+      <module name="email-service-api" options="-parameters" />
+      <module name="email-service-parent" options="" />
       <module name="file-service" options="-parameters" />
       <module name="file-service-api" options="-parameters" />
       <module name="file-service-parent" options="" />

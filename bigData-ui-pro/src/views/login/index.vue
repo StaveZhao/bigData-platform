@@ -21,7 +21,7 @@
 
 <script>
 import { log } from '@/api/system/user'
-import background from '@/assets/images/login-bg-pro.png'
+import background from '@/assets/images/1.jpeg'
 
 export default {
   name: 'Login',
@@ -89,7 +89,7 @@ export default {
   height: calc(100vh);
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: right;
   align-items: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -106,6 +106,7 @@ export default {
     box-shadow: 0 0 25px rgba(223, 220, 239, .5);
     width: 385px;
     padding: 25px 25px 5px 25px;
+    margin-right: 8%;
     .el-input {
       height: 38px;
       input {

@@ -1,230 +1,121 @@
-2022-11-15 14:21:49 INFO  bigData-service-system background-preinit org.hibernate.validator.internal.util.Version HV000001: Hibernate Validator 6.1.6.Final
-2022-11-15 14:21:50 INFO  bigData-service-system main org.springframework.cloud.config.client.ConfigServicePropertySourceLocator Fetching config from server at : http://localhost:8611/
-2022-11-15 14:21:50 INFO  bigData-service-system main org.springframework.cloud.config.client.ConfigServicePropertySourceLocator Located environment: name=bigData-service-system, profiles=[dev], label=null, version=null, state=null
-2022-11-15 14:21:50 INFO  bigData-service-system main org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration Located property source: [BootstrapPropertySource {name='bootstrapProperties-classpath:/config/bigData-service-system-dev.yml'}, BootstrapPropertySource {name='bootstrapProperties-classpath:/config/application-dev.yml'}]
-2022-11-15 14:21:50 INFO  bigData-service-system main com.bigData.service.system.BigDataSystemApplication The following profiles are active: dev
-2022-11-15 14:21:51 INFO  bigData-service-system main org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode!
-2022-11-15 14:21:51 INFO  bigData-service-system main org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2022-11-15 14:21:51 INFO  bigData-service-system main org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 18ms. Found 0 Redis repository interfaces.
-2022-11-15 14:21:51 INFO  bigData-service-system main org.springframework.cloud.context.scope.GenericScope BeanFactory id=3031a363-e243-3154-8642-4481e6ceef9a
-2022-11-15 14:21:52 INFO  bigData-service-system main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2022-11-15 14:21:52 INFO  bigData-service-system main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$c91beddc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2022-11-15 14:21:52 INFO  bigData-service-system main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2022-11-15 14:21:52 INFO  bigData-service-system main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@17c4dc5b' of type [org.springframework.security.oauth2.provider.expression.OAuth2MethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2022-11-15 14:21:52 INFO  bigData-service-system main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2022-11-15 14:21:52 INFO  bigData-service-system main io.undertow.servlet Initializing Spring embedded WebApplicationContext
-2022-11-15 14:21:52 INFO  bigData-service-system main org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 2178 ms
-2022-11-15 14:21:52 INFO  bigData-service-system main com.netflix.config.sources.URLConfigurationSource To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2022-11-15 14:21:52 INFO  bigData-service-system main com.netflix.config.DynamicPropertyFactory DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@4e94669c
-2022-11-15 14:21:52 INFO  bigData-service-system main org.springframework.boot.actuate.endpoint.web.ServletEndpointRegistrar Registered '/actuator/hystrix.stream' to hystrix.stream-actuator-endpoint
-2022-11-15 14:21:53 INFO  bigData-service-system main com.zaxxer.hikari.HikariDataSource mysql - Starting...
-2022-11-15 14:21:53 INFO  bigData-service-system main com.zaxxer.hikari.HikariDataSource mysql - Start completed.
-2022-11-15 14:21:53 INFO  bigData-service-system main com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource - load a datasource named [mysql] success
-2022-11-15 14:21:53 INFO  bigData-service-system main com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource initial loaded [1] datasource,primary datasource named [mysql]
-2022-11-15 14:21:56 INFO  bigData-service-system main org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver Exposing 18 endpoint(s) beneath base path '/actuator'
-2022-11-15 14:21:56 INFO  bigData-service-system main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService
-2022-11-15 14:21:56 INFO  bigData-service-system main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'taskExecutor'
-2022-11-15 14:21:56 INFO  bigData-service-system main springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2022-11-15 14:21:57 INFO  bigData-service-system main com.netflix.config.sources.URLConfigurationSource To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2022-11-15 14:21:58 INFO  bigData-service-system main org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration 
+2022-11-17 14:34:54 INFO  bigData-service-system background-preinit org.hibernate.validator.internal.util.Version HV000001: Hibernate Validator 6.1.6.Final
+2022-11-17 14:34:55 INFO  bigData-service-system main org.springframework.cloud.config.client.ConfigServicePropertySourceLocator Fetching config from server at : http://localhost:8611/
+2022-11-17 14:34:55 INFO  bigData-service-system main org.springframework.cloud.config.client.ConfigServicePropertySourceLocator Located environment: name=bigData-service-system, profiles=[dev], label=null, version=null, state=null
+2022-11-17 14:34:55 INFO  bigData-service-system main org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration Located property source: [BootstrapPropertySource {name='bootstrapProperties-classpath:/config/bigData-service-system-dev.yml'}, BootstrapPropertySource {name='bootstrapProperties-classpath:/config/application-dev.yml'}]
+2022-11-17 14:34:55 INFO  bigData-service-system main com.bigData.service.system.BigDataSystemApplication The following profiles are active: dev
+2022-11-17 14:34:56 INFO  bigData-service-system main org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-11-17 14:34:56 INFO  bigData-service-system main org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-11-17 14:34:56 INFO  bigData-service-system main org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 34ms. Found 0 Redis repository interfaces.
+2022-11-17 14:34:57 INFO  bigData-service-system main org.springframework.cloud.context.scope.GenericScope BeanFactory id=0bba28af-88b4-32b9-bd02-e269cbe4dd38
+2022-11-17 14:34:57 INFO  bigData-service-system main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-17 14:34:57 INFO  bigData-service-system main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$e352b91d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-17 14:34:57 INFO  bigData-service-system main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-17 14:34:57 INFO  bigData-service-system main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@30abf79c' of type [org.springframework.security.oauth2.provider.expression.OAuth2MethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-17 14:34:57 INFO  bigData-service-system main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-17 14:34:58 INFO  bigData-service-system main io.undertow.servlet Initializing Spring embedded WebApplicationContext
+2022-11-17 14:34:58 INFO  bigData-service-system main org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 2909 ms
+2022-11-17 14:34:58 INFO  bigData-service-system main com.netflix.config.sources.URLConfigurationSource To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-11-17 14:34:58 INFO  bigData-service-system main com.netflix.config.DynamicPropertyFactory DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@5c9e8a67
+2022-11-17 14:34:58 INFO  bigData-service-system main org.springframework.boot.actuate.endpoint.web.ServletEndpointRegistrar Registered '/actuator/hystrix.stream' to hystrix.stream-actuator-endpoint
+2022-11-17 14:34:59 INFO  bigData-service-system main com.zaxxer.hikari.HikariDataSource mysql - Starting...
+2022-11-17 14:34:59 INFO  bigData-service-system main com.zaxxer.hikari.HikariDataSource mysql - Start completed.
+2022-11-17 14:34:59 INFO  bigData-service-system main com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource - load a datasource named [mysql] success
+2022-11-17 14:34:59 INFO  bigData-service-system main com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource initial loaded [1] datasource,primary datasource named [mysql]
+2022-11-17 14:35:02 INFO  bigData-service-system main org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver Exposing 18 endpoint(s) beneath base path '/actuator'
+2022-11-17 14:35:03 INFO  bigData-service-system main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService
+2022-11-17 14:35:03 INFO  bigData-service-system main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'taskExecutor'
+2022-11-17 14:35:03 INFO  bigData-service-system main springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-11-17 14:35:03 INFO  bigData-service-system main com.netflix.config.sources.URLConfigurationSource To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-11-17 14:35:04 INFO  bigData-service-system main org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration 
 
-Using generated security password: 72b4d3b5-4434-486b-a54f-f7eb0bda77ff
+Using generated security password: 7e438676-ad8c-4251-98eb-b510b50094b2
 
-2022-11-15 14:21:58 INFO  bigData-service-system main org.springframework.security.web.DefaultSecurityFilterChain Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@78b3f926, org.springframework.security.web.context.SecurityContextPersistenceFilter@5710f755, org.springframework.security.web.header.HeaderWriterFilter@5bb00dcc, org.springframework.security.web.authentication.logout.LogoutFilter@7ae88df1, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@ab5c335, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@640890bc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@71f9f8ba, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1ec690bd, org.springframework.security.web.session.SessionManagementFilter@55732ae6, org.springframework.security.web.access.ExceptionTranslationFilter@6285027a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@734d870f]
-2022-11-15 14:21:58 INFO  bigData-service-system main org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration Eureka HTTP Client uses Jersey
-2022-11-15 14:21:58 INFO  bigData-service-system main org.springframework.cloud.netflix.eureka.InstanceInfoFactory Setting initial instance status as: STARTING
-2022-11-15 14:21:58 INFO  bigData-service-system main com.netflix.discovery.DiscoveryClient Initializing Eureka in region us-east-1
-2022-11-15 14:21:58 INFO  bigData-service-system main com.netflix.discovery.provider.DiscoveryJerseyProvider Using JSON encoding codec LegacyJacksonJson
-2022-11-15 14:21:58 INFO  bigData-service-system main com.netflix.discovery.provider.DiscoveryJerseyProvider Using JSON decoding codec LegacyJacksonJson
-2022-11-15 14:21:58 INFO  bigData-service-system main com.netflix.discovery.provider.DiscoveryJerseyProvider Using XML encoding codec XStreamXml
-2022-11-15 14:21:58 INFO  bigData-service-system main com.netflix.discovery.provider.DiscoveryJerseyProvider Using XML decoding codec XStreamXml
-2022-11-15 14:21:59 INFO  bigData-service-system main com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Resolving eureka endpoints via configuration
-2022-11-15 14:21:59 INFO  bigData-service-system main com.netflix.discovery.DiscoveryClient Disable delta property : false
-2022-11-15 14:21:59 INFO  bigData-service-system main com.netflix.discovery.DiscoveryClient Single vip registry refresh property : null
-2022-11-15 14:21:59 INFO  bigData-service-system main com.netflix.discovery.DiscoveryClient Force full registry fetch : false
-2022-11-15 14:21:59 INFO  bigData-service-system main com.netflix.discovery.DiscoveryClient Application is null : false
-2022-11-15 14:21:59 INFO  bigData-service-system main com.netflix.discovery.DiscoveryClient Registered Applications size is zero : true
-2022-11-15 14:21:59 INFO  bigData-service-system main com.netflix.discovery.DiscoveryClient Application version is -1: true
-2022-11-15 14:21:59 INFO  bigData-service-system main com.netflix.discovery.DiscoveryClient Getting all instance registry info from the eureka server
-2022-11-15 14:21:59 INFO  bigData-service-system main com.netflix.discovery.DiscoveryClient The response status is 200
-2022-11-15 14:21:59 INFO  bigData-service-system main com.netflix.discovery.DiscoveryClient Starting heartbeat executor: renew interval is: 20
-2022-11-15 14:21:59 INFO  bigData-service-system main com.netflix.discovery.InstanceInfoReplicator InstanceInfoReplicator onDemand update allowed rate per min is 4
-2022-11-15 14:21:59 INFO  bigData-service-system main com.netflix.discovery.DiscoveryClient Discovery Client initialized at timestamp 1668493319185 with initial instances count: 0
-2022-11-15 14:21:59 INFO  bigData-service-system main org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry Registering application BIGDATA-SERVICE-SYSTEM with eureka with status UP
-2022-11-15 14:21:59 INFO  bigData-service-system main com.netflix.discovery.DiscoveryClient Saw local status change event StatusChangeEvent [timestamp=1668493319197, current=UP, previous=STARTING]
-2022-11-15 14:21:59 INFO  bigData-service-system DiscoveryClient-InstanceInfoReplicator-0 com.netflix.discovery.DiscoveryClient DiscoveryClient_BIGDATA-SERVICE-SYSTEM/bogon:bigData-service-system:8810: registering service...
-2022-11-15 14:21:59 INFO  bigData-service-system main io.undertow starting server: Undertow - 2.1.4.Final
-2022-11-15 14:21:59 INFO  bigData-service-system main org.xnio XNIO version 3.8.0.Final
-2022-11-15 14:21:59 INFO  bigData-service-system main org.xnio.nio XNIO NIO Implementation Version 3.8.0.Final
-2022-11-15 14:21:59 INFO  bigData-service-system DiscoveryClient-InstanceInfoReplicator-0 com.netflix.discovery.DiscoveryClient DiscoveryClient_BIGDATA-SERVICE-SYSTEM/bogon:bigData-service-system:8810 - registration status: 204
-2022-11-15 14:21:59 INFO  bigData-service-system main org.jboss.threads JBoss Threads version 3.1.0.Final
-2022-11-15 14:21:59 INFO  bigData-service-system main org.springframework.boot.web.embedded.undertow.UndertowWebServer Undertow started on port(s) 8810 (http)
-2022-11-15 14:21:59 INFO  bigData-service-system main org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration Updating port to 8810
-2022-11-15 14:21:59 INFO  bigData-service-system main springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Context refreshed
-2022-11-15 14:21:59 INFO  bigData-service-system main springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Found 1 custom documentation plugin(s)
-2022-11-15 14:21:59 INFO  bigData-service-system main springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Scanning for api listing references
-2022-11-15 14:21:59 INFO  bigData-service-system main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: deletePostBatchUsingDELETE_1
-2022-11-15 14:21:59 INFO  bigData-service-system main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: getPostListUsingGET_1
-2022-11-15 14:21:59 INFO  bigData-service-system main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: deletePostBatchUsingDELETE_2
-2022-11-15 14:21:59 INFO  bigData-service-system main com.bigData.service.system.BigDataSystemApplication Started BigDataSystemApplication in 10.535 seconds (JVM running for 11.202)
-2022-11-15 14:21:59 INFO  bigData-service-system RMI TCP Connection(4)-192.168.9.67 io.undertow.servlet Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-11-15 14:21:59 INFO  bigData-service-system RMI TCP Connection(4)-192.168.9.67 org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
-2022-11-15 14:21:59 INFO  bigData-service-system RMI TCP Connection(4)-192.168.9.67 org.springframework.web.servlet.DispatcherServlet Completed initialization in 11 ms
-2022-11-15 14:21:59 INFO  bigData-service-system RMI TCP Connection(3)-192.168.9.67 org.springframework.cloud.config.client.ConfigServicePropertySourceLocator Fetching config from server at : http://localhost:8611/
-2022-11-15 14:21:59 INFO  bigData-service-system RMI TCP Connection(3)-192.168.9.67 org.springframework.cloud.config.client.ConfigServicePropertySourceLocator Located environment: name=bigData-service-system, profiles=[dev], label=null, version=null, state=null
-2022-11-15 14:22:02 INFO  bigData-service-system DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.DiscoveryClient Disable delta property : false
-2022-11-15 14:22:02 INFO  bigData-service-system DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.DiscoveryClient Single vip registry refresh property : null
-2022-11-15 14:22:02 INFO  bigData-service-system DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.DiscoveryClient Force full registry fetch : false
-2022-11-15 14:22:02 INFO  bigData-service-system DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.DiscoveryClient Application is null : false
-2022-11-15 14:22:02 INFO  bigData-service-system DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.DiscoveryClient Registered Applications size is zero : true
-2022-11-15 14:22:02 INFO  bigData-service-system DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.DiscoveryClient Application version is -1: false
-2022-11-15 14:22:02 INFO  bigData-service-system DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.DiscoveryClient Getting all instance registry info from the eureka server
-2022-11-15 14:22:02 INFO  bigData-service-system DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.DiscoveryClient The response status is 200
-2022-11-15 14:24:00 INFO  bigData-service-system XNIO-1 task-2 com.bigData.common.security.config.DataSecurityInnerAspect feign内部接口访问 loginByUsername 不鉴权处理
-2022-11-15 14:26:59 INFO  bigData-service-system AsyncResolver-bootstrap-executor-0 com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Resolving eureka endpoints via configuration
-2022-11-15 14:27:15 INFO  bigData-service-system XNIO-1 task-4 org.springframework.cloud.config.client.ConfigServicePropertySourceLocator Fetching config from server at : http://localhost:8611/
-2022-11-15 14:27:15 INFO  bigData-service-system XNIO-1 task-4 org.springframework.cloud.config.client.ConfigServicePropertySourceLocator Located environment: name=bigData-service-system, profiles=[dev], label=null, version=null, state=null
-2022-11-15 14:31:59 INFO  bigData-service-system AsyncResolver-bootstrap-executor-0 com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Resolving eureka endpoints via configuration
-2022-11-15 14:32:35 INFO  bigData-service-system XNIO-1 task-2 org.springframework.cloud.config.client.ConfigServicePropertySourceLocator Fetching config from server at : http://localhost:8611/
-2022-11-15 14:32:35 INFO  bigData-service-system XNIO-1 task-2 org.springframework.cloud.config.client.ConfigServicePropertySourceLocator Located environment: name=bigData-service-system, profiles=[dev], label=null, version=null, state=null
-2022-11-15 14:36:59 INFO  bigData-service-system AsyncResolver-bootstrap-executor-0 com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Resolving eureka endpoints via configuration
-2022-11-15 14:37:35 INFO  bigData-service-system XNIO-1 task-4 org.springframework.cloud.config.client.ConfigServicePropertySourceLocator Fetching config from server at : http://localhost:8611/
-2022-11-15 14:37:35 INFO  bigData-service-system XNIO-1 task-4 org.springframework.cloud.config.client.ConfigServicePropertySourceLocator Located environment: name=bigData-service-system, profiles=[dev], label=null, version=null, state=null
-2022-11-15 14:41:59 INFO  bigData-service-system AsyncResolver-bootstrap-executor-0 com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Resolving eureka endpoints via configuration
-2022-11-15 14:42:55 INFO  bigData-service-system XNIO-1 task-4 org.springframework.cloud.config.client.ConfigServicePropertySourceLocator Fetching config from server at : http://localhost:8611/
-2022-11-15 14:42:55 INFO  bigData-service-system XNIO-1 task-4 org.springframework.cloud.config.client.ConfigServicePropertySourceLocator Located environment: name=bigData-service-system, profiles=[dev], label=null, version=null, state=null
-2022-11-15 14:46:59 INFO  bigData-service-system AsyncResolver-bootstrap-executor-0 com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Resolving eureka endpoints via configuration
-2022-11-15 14:48:15 INFO  bigData-service-system XNIO-1 task-4 org.springframework.cloud.config.client.ConfigServicePropertySourceLocator Fetching config from server at : http://localhost:8611/
-2022-11-15 14:48:15 INFO  bigData-service-system XNIO-1 task-4 org.springframework.cloud.config.client.ConfigServicePropertySourceLocator Located environment: name=bigData-service-system, profiles=[dev], label=null, version=null, state=null
-2022-11-15 14:51:59 INFO  bigData-service-system AsyncResolver-bootstrap-executor-0 com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Resolving eureka endpoints via configuration
-2022-11-15 14:53:15 INFO  bigData-service-system XNIO-1 task-4 org.springframework.cloud.config.client.ConfigServicePropertySourceLocator Fetching config from server at : http://localhost:8611/
-2022-11-15 14:53:15 INFO  bigData-service-system XNIO-1 task-4 org.springframework.cloud.config.client.ConfigServicePropertySourceLocator Located environment: name=bigData-service-system, profiles=[dev], label=null, version=null, state=null
-2022-11-15 14:56:59 INFO  bigData-service-system AsyncResolver-bootstrap-executor-0 com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Resolving eureka endpoints via configuration
-2022-11-15 14:58:35 INFO  bigData-service-system XNIO-1 task-4 org.springframework.cloud.config.client.ConfigServicePropertySourceLocator Fetching config from server at : http://localhost:8611/
-2022-11-15 14:58:36 INFO  bigData-service-system XNIO-1 task-4 org.springframework.cloud.config.client.ConfigServicePropertySourceLocator Located environment: name=bigData-service-system, profiles=[dev], label=null, version=null, state=null
-2022-11-15 15:01:59 INFO  bigData-service-system AsyncResolver-bootstrap-executor-0 com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Resolving eureka endpoints via configuration
-2022-11-15 15:03:55 INFO  bigData-service-system XNIO-1 task-4 org.springframework.cloud.config.client.ConfigServicePropertySourceLocator Fetching config from server at : http://localhost:8611/
-2022-11-15 15:03:55 INFO  bigData-service-system XNIO-1 task-4 org.springframework.cloud.config.client.ConfigServicePropertySourceLocator Located environment: name=bigData-service-system, profiles=[dev], label=null, version=null, state=null
-2022-11-15 15:05:29 INFO  bigData-service-system DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8610/eureka/} exception=java.net.ConnectException: Connection refused (Connection refused) stacktrace=com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
-	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
-	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
-	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
-	at com.sun.jersey.api.client.Client.handle(Client.java:652)
-	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
-	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
-	at com.sun.jersey.api.client.WebResource$Builder.get(WebResource.java:509)
-	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getApplicationsInternal(AbstractJerseyEurekaHttpClient.java:196)
-	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getDelta(AbstractJerseyEurekaHttpClient.java:172)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
-	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
-	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:91)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
-	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
-	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
-	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1135)
-	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1016)
-	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1535)
-	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1502)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: java.net.ConnectException: Connection refused (Connection refused)
-	at java.net.PlainSocketImpl.socketConnect(Native Method)
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-	at java.net.Socket.connect(Socket.java:607)
-	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
-	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
-	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
-	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)
-	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
-	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
-	... 29 more
-
-2022-11-15 15:05:29 INFO  bigData-service-system DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8610/eureka/}, exception=java.net.ConnectException: Connection refused (Connection refused) stacktrace=com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
-	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
-	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
-	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
-	at com.sun.jersey.api.client.Client.handle(Client.java:652)
-	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
-	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
-	at com.sun.jersey.api.client.WebResource$Builder.get(WebResource.java:509)
-	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getApplicationsInternal(AbstractJerseyEurekaHttpClient.java:196)
-	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getDelta(AbstractJerseyEurekaHttpClient.java:172)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
-	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
-	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
-	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
-	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
-	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
-	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1135)
-	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1016)
-	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1535)
-	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1502)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: java.net.ConnectException: Connection refused (Connection refused)
-	at java.net.PlainSocketImpl.socketConnect(Native Method)
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-	at java.net.Socket.connect(Socket.java:607)
-	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
-	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
-	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
-	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)
-	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
-	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
-	... 30 more
-
-2022-11-15 15:05:29 INFO  bigData-service-system DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.DiscoveryClient DiscoveryClient_BIGDATA-SERVICE-SYSTEM/bogon:bigData-service-system:8810 - was unable to refresh its cache! This periodic background refresh will be retried in 3 seconds. status = Cannot execute request on any known server stacktrace = com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
-	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
-	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
-	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1135)
-	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1016)
-	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1535)
-	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1502)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-
-2022-11-15 15:05:30 INFO  bigData-service-system SpringContextShutdownHook org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry Unregistering application BIGDATA-SERVICE-SYSTEM with eureka with status DOWN
-2022-11-15 15:05:30 INFO  bigData-service-system DiscoveryClient-InstanceInfoReplicator-0 com.netflix.discovery.DiscoveryClient DiscoveryClient_BIGDATA-SERVICE-SYSTEM/bogon:bigData-service-system:8810: registering service...
-2022-11-15 15:05:30 INFO  bigData-service-system DiscoveryClient-InstanceInfoReplicator-0 com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8610/eureka/} exception=java.net.ConnectException: Connection refused (Connection refused) stacktrace=com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
+2022-11-17 14:35:04 INFO  bigData-service-system main org.springframework.security.web.DefaultSecurityFilterChain Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@37d12d0e, org.springframework.security.web.context.SecurityContextPersistenceFilter@697f4085, org.springframework.security.web.header.HeaderWriterFilter@15db4dc, org.springframework.security.web.authentication.logout.LogoutFilter@11893180, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@5fe5f2f0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@55aabc72, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7edb2a4b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6f8c6694, org.springframework.security.web.session.SessionManagementFilter@7e5b449c, org.springframework.security.web.access.ExceptionTranslationFilter@14b3976, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@42fe9099]
+2022-11-17 14:35:04 INFO  bigData-service-system main org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration Eureka HTTP Client uses Jersey
+2022-11-17 14:35:04 INFO  bigData-service-system main org.springframework.cloud.netflix.eureka.InstanceInfoFactory Setting initial instance status as: STARTING
+2022-11-17 14:35:04 INFO  bigData-service-system main com.netflix.discovery.DiscoveryClient Initializing Eureka in region us-east-1
+2022-11-17 14:35:04 INFO  bigData-service-system main com.netflix.discovery.provider.DiscoveryJerseyProvider Using JSON encoding codec LegacyJacksonJson
+2022-11-17 14:35:04 INFO  bigData-service-system main com.netflix.discovery.provider.DiscoveryJerseyProvider Using JSON decoding codec LegacyJacksonJson
+2022-11-17 14:35:05 INFO  bigData-service-system main com.netflix.discovery.provider.DiscoveryJerseyProvider Using XML encoding codec XStreamXml
+2022-11-17 14:35:05 INFO  bigData-service-system main com.netflix.discovery.provider.DiscoveryJerseyProvider Using XML decoding codec XStreamXml
+2022-11-17 14:35:05 INFO  bigData-service-system main com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Resolving eureka endpoints via configuration
+2022-11-17 14:35:05 INFO  bigData-service-system main com.netflix.discovery.DiscoveryClient Disable delta property : false
+2022-11-17 14:35:05 INFO  bigData-service-system main com.netflix.discovery.DiscoveryClient Single vip registry refresh property : null
+2022-11-17 14:35:05 INFO  bigData-service-system main com.netflix.discovery.DiscoveryClient Force full registry fetch : false
+2022-11-17 14:35:05 INFO  bigData-service-system main com.netflix.discovery.DiscoveryClient Application is null : false
+2022-11-17 14:35:05 INFO  bigData-service-system main com.netflix.discovery.DiscoveryClient Registered Applications size is zero : true
+2022-11-17 14:35:05 INFO  bigData-service-system main com.netflix.discovery.DiscoveryClient Application version is -1: true
+2022-11-17 14:35:05 INFO  bigData-service-system main com.netflix.discovery.DiscoveryClient Getting all instance registry info from the eureka server
+2022-11-17 14:35:05 INFO  bigData-service-system main com.netflix.discovery.DiscoveryClient The response status is 200
+2022-11-17 14:35:05 INFO  bigData-service-system main com.netflix.discovery.DiscoveryClient Starting heartbeat executor: renew interval is: 20
+2022-11-17 14:35:05 INFO  bigData-service-system main com.netflix.discovery.InstanceInfoReplicator InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-11-17 14:35:05 INFO  bigData-service-system main com.netflix.discovery.DiscoveryClient Discovery Client initialized at timestamp 1668666905498 with initial instances count: 3
+2022-11-17 14:35:05 INFO  bigData-service-system main org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry Registering application BIGDATA-SERVICE-SYSTEM with eureka with status UP
+2022-11-17 14:35:05 INFO  bigData-service-system main com.netflix.discovery.DiscoveryClient Saw local status change event StatusChangeEvent [timestamp=1668666905514, current=UP, previous=STARTING]
+2022-11-17 14:35:05 INFO  bigData-service-system DiscoveryClient-InstanceInfoReplicator-0 com.netflix.discovery.DiscoveryClient DiscoveryClient_BIGDATA-SERVICE-SYSTEM/192.168.9.67:bigData-service-system:8810: registering service...
+2022-11-17 14:35:05 INFO  bigData-service-system main io.undertow starting server: Undertow - 2.1.4.Final
+2022-11-17 14:35:05 INFO  bigData-service-system main org.xnio XNIO version 3.8.0.Final
+2022-11-17 14:35:05 INFO  bigData-service-system main org.xnio.nio XNIO NIO Implementation Version 3.8.0.Final
+2022-11-17 14:35:05 INFO  bigData-service-system DiscoveryClient-InstanceInfoReplicator-0 com.netflix.discovery.DiscoveryClient DiscoveryClient_BIGDATA-SERVICE-SYSTEM/192.168.9.67:bigData-service-system:8810 - registration status: 204
+2022-11-17 14:35:05 INFO  bigData-service-system main org.jboss.threads JBoss Threads version 3.1.0.Final
+2022-11-17 14:35:05 INFO  bigData-service-system main org.springframework.boot.web.embedded.undertow.UndertowWebServer Undertow started on port(s) 8810 (http)
+2022-11-17 14:35:05 INFO  bigData-service-system main org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration Updating port to 8810
+2022-11-17 14:35:05 INFO  bigData-service-system main springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Context refreshed
+2022-11-17 14:35:05 INFO  bigData-service-system main springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Found 1 custom documentation plugin(s)
+2022-11-17 14:35:05 INFO  bigData-service-system main springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Scanning for api listing references
+2022-11-17 14:35:06 INFO  bigData-service-system main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: deletePostBatchUsingDELETE_1
+2022-11-17 14:35:06 INFO  bigData-service-system main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: getPostListUsingGET_1
+2022-11-17 14:35:06 INFO  bigData-service-system main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: deletePostBatchUsingDELETE_2
+2022-11-17 14:35:06 INFO  bigData-service-system main com.bigData.service.system.BigDataSystemApplication Started BigDataSystemApplication in 12.46 seconds (JVM running for 13.202)
+2022-11-17 14:35:06 INFO  bigData-service-system RMI TCP Connection(9)-127.0.0.1 io.undertow.servlet Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-17 14:35:06 INFO  bigData-service-system RMI TCP Connection(9)-127.0.0.1 org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+2022-11-17 14:35:06 INFO  bigData-service-system RMI TCP Connection(9)-127.0.0.1 org.springframework.web.servlet.DispatcherServlet Completed initialization in 18 ms
+2022-11-17 14:35:06 INFO  bigData-service-system RMI TCP Connection(8)-127.0.0.1 org.springframework.cloud.config.client.ConfigServicePropertySourceLocator Fetching config from server at : http://localhost:8611/
+2022-11-17 14:35:06 INFO  bigData-service-system RMI TCP Connection(8)-127.0.0.1 org.springframework.cloud.config.client.ConfigServicePropertySourceLocator Located environment: name=bigData-service-system, profiles=[dev], label=null, version=null, state=null
+2022-11-17 14:40:05 INFO  bigData-service-system AsyncResolver-bootstrap-executor-0 com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Resolving eureka endpoints via configuration
+2022-11-17 14:40:56 INFO  bigData-service-system XNIO-1 task-1 com.bigData.common.security.config.DataSecurityInnerAspect feign内部接口访问 loginByUsername 不鉴权处理
+2022-11-17 14:45:05 INFO  bigData-service-system AsyncResolver-bootstrap-executor-0 com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Resolving eureka endpoints via configuration
+2022-11-17 14:50:05 INFO  bigData-service-system AsyncResolver-bootstrap-executor-0 com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Resolving eureka endpoints via configuration
+2022-11-17 14:55:05 INFO  bigData-service-system AsyncResolver-bootstrap-executor-0 com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Resolving eureka endpoints via configuration
+2022-11-17 15:00:05 INFO  bigData-service-system AsyncResolver-bootstrap-executor-0 com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Resolving eureka endpoints via configuration
+2022-11-17 15:05:05 INFO  bigData-service-system AsyncResolver-bootstrap-executor-0 com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Resolving eureka endpoints via configuration
+2022-11-17 15:10:05 INFO  bigData-service-system AsyncResolver-bootstrap-executor-0 com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Resolving eureka endpoints via configuration
+2022-11-17 15:15:05 INFO  bigData-service-system AsyncResolver-bootstrap-executor-0 com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Resolving eureka endpoints via configuration
+2022-11-17 15:20:05 INFO  bigData-service-system AsyncResolver-bootstrap-executor-0 com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Resolving eureka endpoints via configuration
+2022-11-17 15:25:05 INFO  bigData-service-system AsyncResolver-bootstrap-executor-0 com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Resolving eureka endpoints via configuration
+2022-11-17 15:30:05 INFO  bigData-service-system AsyncResolver-bootstrap-executor-0 com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Resolving eureka endpoints via configuration
+2022-11-17 15:35:05 INFO  bigData-service-system AsyncResolver-bootstrap-executor-0 com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Resolving eureka endpoints via configuration
+2022-11-17 15:40:05 INFO  bigData-service-system AsyncResolver-bootstrap-executor-0 com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Resolving eureka endpoints via configuration
+2022-11-17 15:45:05 INFO  bigData-service-system AsyncResolver-bootstrap-executor-0 com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Resolving eureka endpoints via configuration
+2022-11-17 15:50:05 INFO  bigData-service-system AsyncResolver-bootstrap-executor-0 com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Resolving eureka endpoints via configuration
+2022-11-17 15:55:05 INFO  bigData-service-system AsyncResolver-bootstrap-executor-0 com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Resolving eureka endpoints via configuration
+2022-11-17 16:00:05 INFO  bigData-service-system AsyncResolver-bootstrap-executor-0 com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Resolving eureka endpoints via configuration
+2022-11-17 16:05:05 INFO  bigData-service-system AsyncResolver-bootstrap-executor-0 com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Resolving eureka endpoints via configuration
+2022-11-17 16:10:05 INFO  bigData-service-system AsyncResolver-bootstrap-executor-0 com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Resolving eureka endpoints via configuration
+2022-11-17 16:15:05 INFO  bigData-service-system AsyncResolver-bootstrap-executor-0 com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Resolving eureka endpoints via configuration
+2022-11-17 16:20:05 INFO  bigData-service-system AsyncResolver-bootstrap-executor-0 com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Resolving eureka endpoints via configuration
+2022-11-17 16:25:05 INFO  bigData-service-system AsyncResolver-bootstrap-executor-0 com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Resolving eureka endpoints via configuration
+2022-11-17 16:30:05 INFO  bigData-service-system AsyncResolver-bootstrap-executor-0 com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Resolving eureka endpoints via configuration
+2022-11-17 16:35:05 INFO  bigData-service-system AsyncResolver-bootstrap-executor-0 com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Resolving eureka endpoints via configuration
+2022-11-17 16:40:05 INFO  bigData-service-system AsyncResolver-bootstrap-executor-0 com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Resolving eureka endpoints via configuration
+2022-11-17 16:45:05 INFO  bigData-service-system AsyncResolver-bootstrap-executor-0 com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Resolving eureka endpoints via configuration
+2022-11-17 16:50:05 INFO  bigData-service-system AsyncResolver-bootstrap-executor-0 com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Resolving eureka endpoints via configuration
+2022-11-17 16:55:05 INFO  bigData-service-system AsyncResolver-bootstrap-executor-0 com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Resolving eureka endpoints via configuration
+2022-11-17 17:00:05 INFO  bigData-service-system AsyncResolver-bootstrap-executor-0 com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Resolving eureka endpoints via configuration
+2022-11-17 17:05:05 INFO  bigData-service-system AsyncResolver-bootstrap-executor-0 com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Resolving eureka endpoints via configuration
+2022-11-17 17:10:05 INFO  bigData-service-system AsyncResolver-bootstrap-executor-0 com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Resolving eureka endpoints via configuration
+2022-11-17 17:15:05 INFO  bigData-service-system AsyncResolver-bootstrap-executor-0 com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Resolving eureka endpoints via configuration
+2022-11-17 17:20:05 INFO  bigData-service-system AsyncResolver-bootstrap-executor-0 com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Resolving eureka endpoints via configuration
+2022-11-17 17:25:05 INFO  bigData-service-system AsyncResolver-bootstrap-executor-0 com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Resolving eureka endpoints via configuration
+2022-11-17 17:30:05 INFO  bigData-service-system AsyncResolver-bootstrap-executor-0 com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Resolving eureka endpoints via configuration
+2022-11-17 17:35:05 INFO  bigData-service-system AsyncResolver-bootstrap-executor-0 com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Resolving eureka endpoints via configuration
+2022-11-17 17:40:05 INFO  bigData-service-system AsyncResolver-bootstrap-executor-0 com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Resolving eureka endpoints via configuration
+2022-11-17 17:45:05 INFO  bigData-service-system AsyncResolver-bootstrap-executor-0 com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Resolving eureka endpoints via configuration
+2022-11-17 17:50:05 INFO  bigData-service-system AsyncResolver-bootstrap-executor-0 com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Resolving eureka endpoints via configuration
+2022-11-17 17:55:05 INFO  bigData-service-system AsyncResolver-bootstrap-executor-0 com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Resolving eureka endpoints via configuration
+2022-11-17 17:55:52 INFO  bigData-service-system SpringContextShutdownHook org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry Unregistering application BIGDATA-SERVICE-SYSTEM with eureka with status DOWN
+2022-11-17 17:55:52 INFO  bigData-service-system DiscoveryClient-InstanceInfoReplicator-0 com.netflix.discovery.DiscoveryClient DiscoveryClient_BIGDATA-SERVICE-SYSTEM/192.168.9.67:bigData-service-system:8810: registering service...
+2022-11-17 17:55:52 INFO  bigData-service-system DiscoveryClient-InstanceInfoReplicator-0 com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8610/eureka/} exception=java.net.ConnectException: Connection refused (Connection refused) stacktrace=com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
 	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
 	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
@@ -274,7 +165,7 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
 	... 29 more
 
-2022-11-15 15:05:30 INFO  bigData-service-system DiscoveryClient-InstanceInfoReplicator-0 com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8610/eureka/}, exception=java.net.ConnectException: Connection refused (Connection refused) stacktrace=com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
+2022-11-17 17:55:52 INFO  bigData-service-system DiscoveryClient-InstanceInfoReplicator-0 com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8610/eureka/}, exception=java.net.ConnectException: Connection refused (Connection refused) stacktrace=com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
 	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
 	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
@@ -325,15 +216,59 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
 	... 30 more
 
-2022-11-15 15:05:30 INFO  bigData-service-system SpringContextShutdownHook io.undertow stopping server: Undertow - 2.1.4.Final
-2022-11-15 15:05:30 INFO  bigData-service-system SpringContextShutdownHook io.undertow.servlet Destroying Spring FrameworkServlet 'dispatcherServlet'
-2022-11-15 15:05:30 INFO  bigData-service-system SpringContextShutdownHook org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Shutting down ExecutorService 'taskExecutor'
-2022-11-15 15:05:30 INFO  bigData-service-system SpringContextShutdownHook com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource start closing ....
-2022-11-15 15:05:30 INFO  bigData-service-system SpringContextShutdownHook com.zaxxer.hikari.HikariDataSource mysql - Shutdown initiated...
-2022-11-15 15:05:30 INFO  bigData-service-system SpringContextShutdownHook com.zaxxer.hikari.HikariDataSource mysql - Shutdown completed.
-2022-11-15 15:05:30 INFO  bigData-service-system SpringContextShutdownHook com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource all closed success,bye
-2022-11-15 15:05:30 INFO  bigData-service-system SpringContextShutdownHook com.netflix.discovery.DiscoveryClient Shutting down DiscoveryClient ...
-2022-11-15 15:05:32 INFO  bigData-service-system DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8610/eureka/}, exception=java.net.ConnectException: Connection refused (Connection refused) stacktrace=com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
+2022-11-17 17:55:52 INFO  bigData-service-system SpringContextShutdownHook io.undertow stopping server: Undertow - 2.1.4.Final
+2022-11-17 17:55:52 INFO  bigData-service-system SpringContextShutdownHook io.undertow.servlet Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-11-17 17:55:52 INFO  bigData-service-system DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8610/eureka/} exception=java.net.ConnectException: Connection refused (Connection refused) stacktrace=com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
+	at com.sun.jersey.api.client.Client.handle(Client.java:652)
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
+	at com.sun.jersey.api.client.WebResource$Builder.get(WebResource.java:509)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getApplicationsInternal(AbstractJerseyEurekaHttpClient.java:196)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getDelta(AbstractJerseyEurekaHttpClient.java:172)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:91)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1135)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1016)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1535)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1502)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:607)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
+	... 29 more
+
+2022-11-17 17:55:52 INFO  bigData-service-system DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8610/eureka/}, exception=java.net.ConnectException: Connection refused (Connection refused) stacktrace=com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
 	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
 	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
@@ -384,7 +319,7 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
 	... 30 more
 
-2022-11-15 15:05:32 INFO  bigData-service-system DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.DiscoveryClient DiscoveryClient_BIGDATA-SERVICE-SYSTEM/bogon:bigData-service-system:8810 - was unable to refresh its cache! This periodic background refresh will be retried in 3 seconds. status = Cannot execute request on any known server stacktrace = com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+2022-11-17 17:55:52 INFO  bigData-service-system DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.DiscoveryClient DiscoveryClient_BIGDATA-SERVICE-SYSTEM/192.168.9.67:bigData-service-system:8810 - was unable to refresh its cache! This periodic background refresh will be retried in 3 seconds. status = Cannot execute request on any known server stacktrace = com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
@@ -400,8 +335,81 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
 
-2022-11-15 15:05:33 INFO  bigData-service-system SpringContextShutdownHook com.netflix.discovery.DiscoveryClient Unregistering ...
-2022-11-15 15:05:33 INFO  bigData-service-system SpringContextShutdownHook com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8610/eureka/}, exception=java.net.ConnectException: Connection refused (Connection refused) stacktrace=com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
+2022-11-17 17:55:52 INFO  bigData-service-system SpringContextShutdownHook org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Shutting down ExecutorService 'taskExecutor'
+2022-11-17 17:55:52 INFO  bigData-service-system SpringContextShutdownHook com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource start closing ....
+2022-11-17 17:55:52 INFO  bigData-service-system SpringContextShutdownHook com.zaxxer.hikari.HikariDataSource mysql - Shutdown initiated...
+2022-11-17 17:55:52 INFO  bigData-service-system SpringContextShutdownHook com.zaxxer.hikari.HikariDataSource mysql - Shutdown completed.
+2022-11-17 17:55:52 INFO  bigData-service-system SpringContextShutdownHook com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource all closed success,bye
+2022-11-17 17:55:52 INFO  bigData-service-system SpringContextShutdownHook com.netflix.discovery.DiscoveryClient Shutting down DiscoveryClient ...
+2022-11-17 17:55:55 INFO  bigData-service-system DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8610/eureka/}, exception=java.net.ConnectException: Connection refused (Connection refused) stacktrace=com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
+	at com.sun.jersey.api.client.Client.handle(Client.java:652)
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
+	at com.sun.jersey.api.client.WebResource$Builder.get(WebResource.java:509)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getApplicationsInternal(AbstractJerseyEurekaHttpClient.java:196)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getDelta(AbstractJerseyEurekaHttpClient.java:172)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1135)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1016)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1535)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1502)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:607)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
+	... 30 more
+
+2022-11-17 17:55:55 INFO  bigData-service-system DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.DiscoveryClient DiscoveryClient_BIGDATA-SERVICE-SYSTEM/192.168.9.67:bigData-service-system:8810 - was unable to refresh its cache! This periodic background refresh will be retried in 3 seconds. status = Cannot execute request on any known server stacktrace = com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1135)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1016)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1535)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1502)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+2022-11-17 17:55:55 INFO  bigData-service-system SpringContextShutdownHook com.netflix.discovery.DiscoveryClient Unregistering ...
+2022-11-17 17:55:55 INFO  bigData-service-system SpringContextShutdownHook com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8610/eureka/}, exception=java.net.ConnectException: Connection refused (Connection refused) stacktrace=com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
 	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
 	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
@@ -465,85 +473,85 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
 	... 43 more
 
-2022-11-15 15:05:33 INFO  bigData-service-system SpringContextShutdownHook com.netflix.discovery.DiscoveryClient Completed shut down of DiscoveryClient
-2022-11-16 11:15:56 INFO  bigData-service-system background-preinit org.hibernate.validator.internal.util.Version HV000001: Hibernate Validator 6.1.6.Final
-2022-11-16 11:15:57 INFO  bigData-service-system main org.springframework.cloud.config.client.ConfigServicePropertySourceLocator Fetching config from server at : http://localhost:8611/
-2022-11-16 11:15:57 INFO  bigData-service-system main org.springframework.cloud.config.client.ConfigServicePropertySourceLocator Located environment: name=bigData-service-system, profiles=[dev], label=null, version=null, state=null
-2022-11-16 11:15:57 INFO  bigData-service-system main org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration Located property source: [BootstrapPropertySource {name='bootstrapProperties-classpath:/config/bigData-service-system-dev.yml'}, BootstrapPropertySource {name='bootstrapProperties-classpath:/config/application-dev.yml'}]
-2022-11-16 11:15:57 INFO  bigData-service-system main com.bigData.service.system.BigDataSystemApplication The following profiles are active: dev
-2022-11-16 11:16:01 INFO  bigData-service-system main org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode!
-2022-11-16 11:16:01 INFO  bigData-service-system main org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2022-11-16 11:16:01 INFO  bigData-service-system main org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 37ms. Found 0 Redis repository interfaces.
-2022-11-16 11:16:02 INFO  bigData-service-system main org.springframework.cloud.context.scope.GenericScope BeanFactory id=0bba28af-88b4-32b9-bd02-e269cbe4dd38
-2022-11-16 11:16:02 INFO  bigData-service-system main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2022-11-16 11:16:02 INFO  bigData-service-system main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$5516e81f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2022-11-16 11:16:02 INFO  bigData-service-system main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2022-11-16 11:16:02 INFO  bigData-service-system main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@8641b7d' of type [org.springframework.security.oauth2.provider.expression.OAuth2MethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2022-11-16 11:16:02 INFO  bigData-service-system main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2022-11-16 11:16:02 INFO  bigData-service-system main io.undertow.servlet Initializing Spring embedded WebApplicationContext
-2022-11-16 11:16:02 INFO  bigData-service-system main org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 4902 ms
-2022-11-16 11:16:02 INFO  bigData-service-system main com.netflix.config.sources.URLConfigurationSource To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2022-11-16 11:16:02 INFO  bigData-service-system main com.netflix.config.DynamicPropertyFactory DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@16ac4d3d
-2022-11-16 11:16:03 INFO  bigData-service-system main org.springframework.boot.actuate.endpoint.web.ServletEndpointRegistrar Registered '/actuator/hystrix.stream' to hystrix.stream-actuator-endpoint
-2022-11-16 11:16:03 INFO  bigData-service-system main com.zaxxer.hikari.HikariDataSource mysql - Starting...
-2022-11-16 11:16:03 INFO  bigData-service-system main com.zaxxer.hikari.HikariDataSource mysql - Start completed.
-2022-11-16 11:16:03 INFO  bigData-service-system main com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource - load a datasource named [mysql] success
-2022-11-16 11:16:03 INFO  bigData-service-system main com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource initial loaded [1] datasource,primary datasource named [mysql]
-2022-11-16 11:16:05 INFO  bigData-service-system main org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver Exposing 18 endpoint(s) beneath base path '/actuator'
-2022-11-16 11:16:06 INFO  bigData-service-system main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService
-2022-11-16 11:16:06 INFO  bigData-service-system main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'taskExecutor'
-2022-11-16 11:16:06 INFO  bigData-service-system main springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2022-11-16 11:16:06 INFO  bigData-service-system main com.netflix.config.sources.URLConfigurationSource To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2022-11-16 11:16:07 INFO  bigData-service-system main org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration 
+2022-11-17 17:55:55 INFO  bigData-service-system SpringContextShutdownHook com.netflix.discovery.DiscoveryClient Completed shut down of DiscoveryClient
+2022-11-17 17:58:10 INFO  bigData-service-system background-preinit org.hibernate.validator.internal.util.Version HV000001: Hibernate Validator 6.1.6.Final
+2022-11-17 17:58:11 INFO  bigData-service-system main org.springframework.cloud.config.client.ConfigServicePropertySourceLocator Fetching config from server at : http://localhost:8611/
+2022-11-17 17:58:11 INFO  bigData-service-system main org.springframework.cloud.config.client.ConfigServicePropertySourceLocator Located environment: name=bigData-service-system, profiles=[dev], label=null, version=null, state=null
+2022-11-17 17:58:11 INFO  bigData-service-system main org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration Located property source: [BootstrapPropertySource {name='bootstrapProperties-classpath:/config/bigData-service-system-dev.yml'}, BootstrapPropertySource {name='bootstrapProperties-classpath:/config/application-dev.yml'}]
+2022-11-17 17:58:11 INFO  bigData-service-system main com.bigData.service.system.BigDataSystemApplication The following profiles are active: dev
+2022-11-17 17:58:13 INFO  bigData-service-system main org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-11-17 17:58:13 INFO  bigData-service-system main org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-11-17 17:58:13 INFO  bigData-service-system main org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 20ms. Found 0 Redis repository interfaces.
+2022-11-17 17:58:13 INFO  bigData-service-system main org.springframework.cloud.context.scope.GenericScope BeanFactory id=0bba28af-88b4-32b9-bd02-e269cbe4dd38
+2022-11-17 17:58:13 INFO  bigData-service-system main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-17 17:58:13 INFO  bigData-service-system main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$d525e84b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-17 17:58:13 INFO  bigData-service-system main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-17 17:58:13 INFO  bigData-service-system main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@afde064' of type [org.springframework.security.oauth2.provider.expression.OAuth2MethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-17 17:58:13 INFO  bigData-service-system main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-17 17:58:14 INFO  bigData-service-system main io.undertow.servlet Initializing Spring embedded WebApplicationContext
+2022-11-17 17:58:14 INFO  bigData-service-system main org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 2481 ms
+2022-11-17 17:58:14 INFO  bigData-service-system main com.netflix.config.sources.URLConfigurationSource To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-11-17 17:58:14 INFO  bigData-service-system main com.netflix.config.DynamicPropertyFactory DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@40faff12
+2022-11-17 17:58:14 INFO  bigData-service-system main org.springframework.boot.actuate.endpoint.web.ServletEndpointRegistrar Registered '/actuator/hystrix.stream' to hystrix.stream-actuator-endpoint
+2022-11-17 17:58:14 INFO  bigData-service-system main com.zaxxer.hikari.HikariDataSource mysql - Starting...
+2022-11-17 17:58:14 INFO  bigData-service-system main com.zaxxer.hikari.HikariDataSource mysql - Start completed.
+2022-11-17 17:58:14 INFO  bigData-service-system main com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource - load a datasource named [mysql] success
+2022-11-17 17:58:14 INFO  bigData-service-system main com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource initial loaded [1] datasource,primary datasource named [mysql]
+2022-11-17 17:58:16 INFO  bigData-service-system main org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver Exposing 18 endpoint(s) beneath base path '/actuator'
+2022-11-17 17:58:17 INFO  bigData-service-system main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService
+2022-11-17 17:58:17 INFO  bigData-service-system main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'taskExecutor'
+2022-11-17 17:58:17 INFO  bigData-service-system main springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-11-17 17:58:17 INFO  bigData-service-system main com.netflix.config.sources.URLConfigurationSource To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-11-17 17:58:18 INFO  bigData-service-system main org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration 
 
-Using generated security password: 5be14024-2595-4ff6-97d9-126e82b30a5e
+Using generated security password: 47001e2d-8fb8-4ae6-a51a-4d7672537f02
 
-2022-11-16 11:16:07 INFO  bigData-service-system main org.springframework.security.web.DefaultSecurityFilterChain Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5327c503, org.springframework.security.web.context.SecurityContextPersistenceFilter@71b01319, org.springframework.security.web.header.HeaderWriterFilter@3dd2a70d, org.springframework.security.web.authentication.logout.LogoutFilter@497ccf3, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@685a3c14, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@28fdce67, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6affbed1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@b41ceac, org.springframework.security.web.session.SessionManagementFilter@38ebf8dc, org.springframework.security.web.access.ExceptionTranslationFilter@2abe5132, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3aaeb65b]
-2022-11-16 11:16:07 INFO  bigData-service-system main org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration Eureka HTTP Client uses Jersey
-2022-11-16 11:16:07 INFO  bigData-service-system main org.springframework.cloud.netflix.eureka.InstanceInfoFactory Setting initial instance status as: STARTING
-2022-11-16 11:16:07 INFO  bigData-service-system main com.netflix.discovery.DiscoveryClient Initializing Eureka in region us-east-1
-2022-11-16 11:16:07 INFO  bigData-service-system main com.netflix.discovery.provider.DiscoveryJerseyProvider Using JSON encoding codec LegacyJacksonJson
-2022-11-16 11:16:07 INFO  bigData-service-system main com.netflix.discovery.provider.DiscoveryJerseyProvider Using JSON decoding codec LegacyJacksonJson
-2022-11-16 11:16:07 INFO  bigData-service-system main com.netflix.discovery.provider.DiscoveryJerseyProvider Using XML encoding codec XStreamXml
-2022-11-16 11:16:07 INFO  bigData-service-system main com.netflix.discovery.provider.DiscoveryJerseyProvider Using XML decoding codec XStreamXml
-2022-11-16 11:16:07 INFO  bigData-service-system main com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Resolving eureka endpoints via configuration
-2022-11-16 11:16:08 INFO  bigData-service-system main com.netflix.discovery.DiscoveryClient Disable delta property : false
-2022-11-16 11:16:08 INFO  bigData-service-system main com.netflix.discovery.DiscoveryClient Single vip registry refresh property : null
-2022-11-16 11:16:08 INFO  bigData-service-system main com.netflix.discovery.DiscoveryClient Force full registry fetch : false
-2022-11-16 11:16:08 INFO  bigData-service-system main com.netflix.discovery.DiscoveryClient Application is null : false
-2022-11-16 11:16:08 INFO  bigData-service-system main com.netflix.discovery.DiscoveryClient Registered Applications size is zero : true
-2022-11-16 11:16:08 INFO  bigData-service-system main com.netflix.discovery.DiscoveryClient Application version is -1: true
-2022-11-16 11:16:08 INFO  bigData-service-system main com.netflix.discovery.DiscoveryClient Getting all instance registry info from the eureka server
-2022-11-16 11:16:08 INFO  bigData-service-system main com.netflix.discovery.DiscoveryClient The response status is 200
-2022-11-16 11:16:08 INFO  bigData-service-system main com.netflix.discovery.DiscoveryClient Starting heartbeat executor: renew interval is: 20
-2022-11-16 11:16:08 INFO  bigData-service-system main com.netflix.discovery.InstanceInfoReplicator InstanceInfoReplicator onDemand update allowed rate per min is 4
-2022-11-16 11:16:08 INFO  bigData-service-system main com.netflix.discovery.DiscoveryClient Discovery Client initialized at timestamp 1668568568129 with initial instances count: 4
-2022-11-16 11:16:08 INFO  bigData-service-system main org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry Registering application BIGDATA-SERVICE-SYSTEM with eureka with status UP
-2022-11-16 11:16:08 INFO  bigData-service-system main com.netflix.discovery.DiscoveryClient Saw local status change event StatusChangeEvent [timestamp=1668568568138, current=UP, previous=STARTING]
-2022-11-16 11:16:08 INFO  bigData-service-system DiscoveryClient-InstanceInfoReplicator-0 com.netflix.discovery.DiscoveryClient DiscoveryClient_BIGDATA-SERVICE-SYSTEM/192.168.9.67:bigData-service-system:8810: registering service...
-2022-11-16 11:16:08 INFO  bigData-service-system main io.undertow starting server: Undertow - 2.1.4.Final
-2022-11-16 11:16:08 INFO  bigData-service-system main org.xnio XNIO version 3.8.0.Final
-2022-11-16 11:16:08 INFO  bigData-service-system main org.xnio.nio XNIO NIO Implementation Version 3.8.0.Final
-2022-11-16 11:16:08 INFO  bigData-service-system DiscoveryClient-InstanceInfoReplicator-0 com.netflix.discovery.DiscoveryClient DiscoveryClient_BIGDATA-SERVICE-SYSTEM/192.168.9.67:bigData-service-system:8810 - registration status: 204
-2022-11-16 11:16:08 INFO  bigData-service-system main org.jboss.threads JBoss Threads version 3.1.0.Final
-2022-11-16 11:16:08 INFO  bigData-service-system main org.springframework.boot.web.embedded.undertow.UndertowWebServer Undertow started on port(s) 8810 (http)
-2022-11-16 11:16:08 INFO  bigData-service-system main org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration Updating port to 8810
-2022-11-16 11:16:08 INFO  bigData-service-system main springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Context refreshed
-2022-11-16 11:16:08 INFO  bigData-service-system main springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Found 1 custom documentation plugin(s)
-2022-11-16 11:16:08 INFO  bigData-service-system main springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Scanning for api listing references
-2022-11-16 11:16:08 INFO  bigData-service-system main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: deletePostBatchUsingDELETE_1
-2022-11-16 11:16:08 INFO  bigData-service-system main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: getPostListUsingGET_1
-2022-11-16 11:16:08 INFO  bigData-service-system main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: deletePostBatchUsingDELETE_2
-2022-11-16 11:16:08 INFO  bigData-service-system main com.bigData.service.system.BigDataSystemApplication Started BigDataSystemApplication in 13.021 seconds (JVM running for 13.611)
-2022-11-16 11:16:08 INFO  bigData-service-system RMI TCP Connection(20)-127.0.0.1 io.undertow.servlet Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-11-16 11:16:08 INFO  bigData-service-system RMI TCP Connection(20)-127.0.0.1 org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
-2022-11-16 11:16:09 INFO  bigData-service-system RMI TCP Connection(20)-127.0.0.1 org.springframework.web.servlet.DispatcherServlet Completed initialization in 14 ms
-2022-11-16 11:16:09 INFO  bigData-service-system RMI TCP Connection(21)-127.0.0.1 org.springframework.cloud.config.client.ConfigServicePropertySourceLocator Fetching config from server at : http://localhost:8611/
-2022-11-16 11:16:09 INFO  bigData-service-system RMI TCP Connection(21)-127.0.0.1 org.springframework.cloud.config.client.ConfigServicePropertySourceLocator Located environment: name=bigData-service-system, profiles=[dev], label=null, version=null, state=null
-2022-11-16 11:16:14 INFO  bigData-service-system SpringContextShutdownHook org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry Unregistering application BIGDATA-SERVICE-SYSTEM with eureka with status DOWN
-2022-11-16 11:16:14 INFO  bigData-service-system DiscoveryClient-InstanceInfoReplicator-0 com.netflix.discovery.DiscoveryClient DiscoveryClient_BIGDATA-SERVICE-SYSTEM/192.168.9.67:bigData-service-system:8810: registering service...
-2022-11-16 11:16:14 INFO  bigData-service-system SpringContextShutdownHook io.undertow stopping server: Undertow - 2.1.4.Final
-2022-11-16 11:16:14 INFO  bigData-service-system DiscoveryClient-InstanceInfoReplicator-0 com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8610/eureka/} exception=java.net.ConnectException: Connection refused (Connection refused) stacktrace=com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
+2022-11-17 17:58:18 INFO  bigData-service-system main org.springframework.security.web.DefaultSecurityFilterChain Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@77984827, org.springframework.security.web.context.SecurityContextPersistenceFilter@b549c4a, org.springframework.security.web.header.HeaderWriterFilter@1a389b39, org.springframework.security.web.authentication.logout.LogoutFilter@13cfe28b, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@7d3cb276, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@457f43a2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4fe03c06, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@24afdf18, org.springframework.security.web.session.SessionManagementFilter@4f86cd50, org.springframework.security.web.access.ExceptionTranslationFilter@22bd6b0a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@42b4cce1]
+2022-11-17 17:58:18 INFO  bigData-service-system main org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration Eureka HTTP Client uses Jersey
+2022-11-17 17:58:18 INFO  bigData-service-system main org.springframework.cloud.netflix.eureka.InstanceInfoFactory Setting initial instance status as: STARTING
+2022-11-17 17:58:19 INFO  bigData-service-system main com.netflix.discovery.DiscoveryClient Initializing Eureka in region us-east-1
+2022-11-17 17:58:19 INFO  bigData-service-system main com.netflix.discovery.provider.DiscoveryJerseyProvider Using JSON encoding codec LegacyJacksonJson
+2022-11-17 17:58:19 INFO  bigData-service-system main com.netflix.discovery.provider.DiscoveryJerseyProvider Using JSON decoding codec LegacyJacksonJson
+2022-11-17 17:58:19 INFO  bigData-service-system main com.netflix.discovery.provider.DiscoveryJerseyProvider Using XML encoding codec XStreamXml
+2022-11-17 17:58:19 INFO  bigData-service-system main com.netflix.discovery.provider.DiscoveryJerseyProvider Using XML decoding codec XStreamXml
+2022-11-17 17:58:19 INFO  bigData-service-system main com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Resolving eureka endpoints via configuration
+2022-11-17 17:58:19 INFO  bigData-service-system main com.netflix.discovery.DiscoveryClient Disable delta property : false
+2022-11-17 17:58:19 INFO  bigData-service-system main com.netflix.discovery.DiscoveryClient Single vip registry refresh property : null
+2022-11-17 17:58:19 INFO  bigData-service-system main com.netflix.discovery.DiscoveryClient Force full registry fetch : false
+2022-11-17 17:58:19 INFO  bigData-service-system main com.netflix.discovery.DiscoveryClient Application is null : false
+2022-11-17 17:58:19 INFO  bigData-service-system main com.netflix.discovery.DiscoveryClient Registered Applications size is zero : true
+2022-11-17 17:58:19 INFO  bigData-service-system main com.netflix.discovery.DiscoveryClient Application version is -1: true
+2022-11-17 17:58:19 INFO  bigData-service-system main com.netflix.discovery.DiscoveryClient Getting all instance registry info from the eureka server
+2022-11-17 17:58:19 INFO  bigData-service-system main com.netflix.discovery.DiscoveryClient The response status is 200
+2022-11-17 17:58:19 INFO  bigData-service-system main com.netflix.discovery.DiscoveryClient Starting heartbeat executor: renew interval is: 20
+2022-11-17 17:58:19 INFO  bigData-service-system main com.netflix.discovery.InstanceInfoReplicator InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-11-17 17:58:19 INFO  bigData-service-system main com.netflix.discovery.DiscoveryClient Discovery Client initialized at timestamp 1668679099698 with initial instances count: 1
+2022-11-17 17:58:19 INFO  bigData-service-system main org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry Registering application BIGDATA-SERVICE-SYSTEM with eureka with status UP
+2022-11-17 17:58:19 INFO  bigData-service-system main com.netflix.discovery.DiscoveryClient Saw local status change event StatusChangeEvent [timestamp=1668679099708, current=UP, previous=STARTING]
+2022-11-17 17:58:19 INFO  bigData-service-system DiscoveryClient-InstanceInfoReplicator-0 com.netflix.discovery.DiscoveryClient DiscoveryClient_BIGDATA-SERVICE-SYSTEM/192.168.9.67:bigData-service-system:8810: registering service...
+2022-11-17 17:58:19 INFO  bigData-service-system main io.undertow starting server: Undertow - 2.1.4.Final
+2022-11-17 17:58:19 INFO  bigData-service-system main org.xnio XNIO version 3.8.0.Final
+2022-11-17 17:58:19 INFO  bigData-service-system main org.xnio.nio XNIO NIO Implementation Version 3.8.0.Final
+2022-11-17 17:58:19 INFO  bigData-service-system DiscoveryClient-InstanceInfoReplicator-0 com.netflix.discovery.DiscoveryClient DiscoveryClient_BIGDATA-SERVICE-SYSTEM/192.168.9.67:bigData-service-system:8810 - registration status: 204
+2022-11-17 17:58:19 INFO  bigData-service-system main org.jboss.threads JBoss Threads version 3.1.0.Final
+2022-11-17 17:58:19 INFO  bigData-service-system main org.springframework.boot.web.embedded.undertow.UndertowWebServer Undertow started on port(s) 8810 (http)
+2022-11-17 17:58:19 INFO  bigData-service-system main org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration Updating port to 8810
+2022-11-17 17:58:19 INFO  bigData-service-system main springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Context refreshed
+2022-11-17 17:58:19 INFO  bigData-service-system main springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Found 1 custom documentation plugin(s)
+2022-11-17 17:58:19 INFO  bigData-service-system main springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Scanning for api listing references
+2022-11-17 17:58:20 INFO  bigData-service-system main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: deletePostBatchUsingDELETE_1
+2022-11-17 17:58:20 INFO  bigData-service-system main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: getPostListUsingGET_1
+2022-11-17 17:58:20 INFO  bigData-service-system main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: deletePostBatchUsingDELETE_2
+2022-11-17 17:58:20 INFO  bigData-service-system main com.bigData.service.system.BigDataSystemApplication Started BigDataSystemApplication in 9.9 seconds (JVM running for 10.736)
+2022-11-17 17:58:20 INFO  bigData-service-system RMI TCP Connection(5)-127.0.0.1 io.undertow.servlet Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-17 17:58:20 INFO  bigData-service-system RMI TCP Connection(5)-127.0.0.1 org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+2022-11-17 17:58:20 INFO  bigData-service-system RMI TCP Connection(5)-127.0.0.1 org.springframework.web.servlet.DispatcherServlet Completed initialization in 12 ms
+2022-11-17 17:58:20 INFO  bigData-service-system RMI TCP Connection(4)-127.0.0.1 org.springframework.cloud.config.client.ConfigServicePropertySourceLocator Fetching config from server at : http://localhost:8611/
+2022-11-17 17:58:20 INFO  bigData-service-system RMI TCP Connection(4)-127.0.0.1 org.springframework.cloud.config.client.ConfigServicePropertySourceLocator Located environment: name=bigData-service-system, profiles=[dev], label=null, version=null, state=null
+2022-11-17 17:59:22 INFO  bigData-service-system SpringContextShutdownHook org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry Unregistering application BIGDATA-SERVICE-SYSTEM with eureka with status DOWN
+2022-11-17 17:59:22 INFO  bigData-service-system DiscoveryClient-InstanceInfoReplicator-0 com.netflix.discovery.DiscoveryClient DiscoveryClient_BIGDATA-SERVICE-SYSTEM/192.168.9.67:bigData-service-system:8810: registering service...
+2022-11-17 17:59:22 INFO  bigData-service-system SpringContextShutdownHook io.undertow stopping server: Undertow - 2.1.4.Final
+2022-11-17 17:59:22 INFO  bigData-service-system DiscoveryClient-InstanceInfoReplicator-0 com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8610/eureka/} exception=java.net.ConnectException: Connection refused (Connection refused) stacktrace=com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
 	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
 	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
@@ -593,57 +601,7 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
 	... 29 more
 
-2022-11-16 11:16:14 INFO  bigData-service-system DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8610/eureka/} exception=java.net.ConnectException: Connection refused (Connection refused) stacktrace=com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
-	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
-	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
-	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
-	at com.sun.jersey.api.client.Client.handle(Client.java:652)
-	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
-	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
-	at com.sun.jersey.api.client.WebResource$Builder.get(WebResource.java:509)
-	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getApplicationsInternal(AbstractJerseyEurekaHttpClient.java:196)
-	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getDelta(AbstractJerseyEurekaHttpClient.java:172)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
-	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
-	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:91)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
-	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
-	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
-	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1135)
-	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1016)
-	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1535)
-	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1502)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: java.net.ConnectException: Connection refused (Connection refused)
-	at java.net.PlainSocketImpl.socketConnect(Native Method)
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-	at java.net.Socket.connect(Socket.java:607)
-	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
-	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
-	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
-	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)
-	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
-	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
-	... 29 more
-
-2022-11-16 11:16:14 INFO  bigData-service-system DiscoveryClient-InstanceInfoReplicator-0 com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8610/eureka/}, exception=java.net.ConnectException: Connection refused (Connection refused) stacktrace=com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
+2022-11-17 17:59:22 INFO  bigData-service-system DiscoveryClient-InstanceInfoReplicator-0 com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8610/eureka/}, exception=java.net.ConnectException: Connection refused (Connection refused) stacktrace=com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
 	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
 	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
@@ -694,7 +652,64 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
 	... 30 more
 
-2022-11-16 11:16:14 INFO  bigData-service-system DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8610/eureka/}, exception=java.net.ConnectException: Connection refused (Connection refused) stacktrace=com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
+2022-11-17 17:59:22 INFO  bigData-service-system SpringContextShutdownHook io.undertow.servlet Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-11-17 17:59:22 INFO  bigData-service-system SpringContextShutdownHook org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Shutting down ExecutorService 'taskExecutor'
+2022-11-17 17:59:22 INFO  bigData-service-system SpringContextShutdownHook com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource start closing ....
+2022-11-17 17:59:22 INFO  bigData-service-system SpringContextShutdownHook com.zaxxer.hikari.HikariDataSource mysql - Shutdown initiated...
+2022-11-17 17:59:22 INFO  bigData-service-system SpringContextShutdownHook com.zaxxer.hikari.HikariDataSource mysql - Shutdown completed.
+2022-11-17 17:59:22 INFO  bigData-service-system SpringContextShutdownHook com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource all closed success,bye
+2022-11-17 17:59:22 INFO  bigData-service-system SpringContextShutdownHook com.netflix.discovery.DiscoveryClient Shutting down DiscoveryClient ...
+2022-11-17 17:59:22 INFO  bigData-service-system DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8610/eureka/} exception=java.net.ConnectException: Connection refused (Connection refused) stacktrace=com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
+	at com.sun.jersey.api.client.Client.handle(Client.java:652)
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
+	at com.sun.jersey.api.client.WebResource$Builder.get(WebResource.java:509)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getApplicationsInternal(AbstractJerseyEurekaHttpClient.java:196)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getDelta(AbstractJerseyEurekaHttpClient.java:172)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:91)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1135)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1016)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1535)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1502)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:607)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
+	... 29 more
+
+2022-11-17 17:59:22 INFO  bigData-service-system DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8610/eureka/}, exception=java.net.ConnectException: Connection refused (Connection refused) stacktrace=com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
 	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
 	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
@@ -745,7 +760,7 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
 	... 30 more
 
-2022-11-16 11:16:14 INFO  bigData-service-system DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.DiscoveryClient DiscoveryClient_BIGDATA-SERVICE-SYSTEM/192.168.9.67:bigData-service-system:8810 - was unable to refresh its cache! This periodic background refresh will be retried in 3 seconds. status = Cannot execute request on any known server stacktrace = com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+2022-11-17 17:59:22 INFO  bigData-service-system DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.DiscoveryClient DiscoveryClient_BIGDATA-SERVICE-SYSTEM/192.168.9.67:bigData-service-system:8810 - was unable to refresh its cache! This periodic background refresh will be retried in 3 seconds. status = Cannot execute request on any known server stacktrace = com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
@@ -761,82 +776,8 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
 
-2022-11-16 11:16:14 INFO  bigData-service-system SpringContextShutdownHook io.undertow.servlet Destroying Spring FrameworkServlet 'dispatcherServlet'
-2022-11-16 11:16:14 INFO  bigData-service-system SpringContextShutdownHook org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Shutting down ExecutorService 'taskExecutor'
-2022-11-16 11:16:14 INFO  bigData-service-system SpringContextShutdownHook com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource start closing ....
-2022-11-16 11:16:14 INFO  bigData-service-system SpringContextShutdownHook com.zaxxer.hikari.HikariDataSource mysql - Shutdown initiated...
-2022-11-16 11:16:14 INFO  bigData-service-system SpringContextShutdownHook com.zaxxer.hikari.HikariDataSource mysql - Shutdown completed.
-2022-11-16 11:16:14 INFO  bigData-service-system SpringContextShutdownHook com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource all closed success,bye
-2022-11-16 11:16:14 INFO  bigData-service-system SpringContextShutdownHook com.netflix.discovery.DiscoveryClient Shutting down DiscoveryClient ...
-2022-11-16 11:16:17 INFO  bigData-service-system DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8610/eureka/}, exception=java.net.ConnectException: Connection refused (Connection refused) stacktrace=com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
-	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
-	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
-	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
-	at com.sun.jersey.api.client.Client.handle(Client.java:652)
-	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
-	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
-	at com.sun.jersey.api.client.WebResource$Builder.get(WebResource.java:509)
-	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getApplicationsInternal(AbstractJerseyEurekaHttpClient.java:196)
-	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getDelta(AbstractJerseyEurekaHttpClient.java:172)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
-	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
-	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
-	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
-	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
-	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
-	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1135)
-	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1016)
-	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1535)
-	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1502)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: java.net.ConnectException: Connection refused (Connection refused)
-	at java.net.PlainSocketImpl.socketConnect(Native Method)
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-	at java.net.Socket.connect(Socket.java:607)
-	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
-	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
-	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
-	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)
-	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
-	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
-	... 30 more
-
-2022-11-16 11:16:17 INFO  bigData-service-system DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.DiscoveryClient DiscoveryClient_BIGDATA-SERVICE-SYSTEM/192.168.9.67:bigData-service-system:8810 - was unable to refresh its cache! This periodic background refresh will be retried in 3 seconds. status = Cannot execute request on any known server stacktrace = com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
-	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
-	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
-	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1135)
-	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1016)
-	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1535)
-	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1502)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-
-2022-11-16 11:16:17 INFO  bigData-service-system SpringContextShutdownHook com.netflix.discovery.DiscoveryClient Unregistering ...
-2022-11-16 11:16:17 INFO  bigData-service-system SpringContextShutdownHook com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8610/eureka/}, exception=java.net.ConnectException: Connection refused (Connection refused) stacktrace=com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
+2022-11-17 17:59:25 INFO  bigData-service-system SpringContextShutdownHook com.netflix.discovery.DiscoveryClient Unregistering ...
+2022-11-17 17:59:25 INFO  bigData-service-system SpringContextShutdownHook com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8610/eureka/}, exception=java.net.ConnectException: Connection refused (Connection refused) stacktrace=com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
 	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
 	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
@@ -900,466 +841,4 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
 	... 43 more
 
-2022-11-16 11:16:17 INFO  bigData-service-system SpringContextShutdownHook com.netflix.discovery.DiscoveryClient Completed shut down of DiscoveryClient
-2022-11-16 14:18:10 INFO  bigData-service-system background-preinit org.hibernate.validator.internal.util.Version HV000001: Hibernate Validator 6.1.6.Final
-2022-11-16 14:18:11 INFO  bigData-service-system main org.springframework.cloud.config.client.ConfigServicePropertySourceLocator Fetching config from server at : http://localhost:8611/
-2022-11-16 14:18:11 INFO  bigData-service-system main org.springframework.cloud.config.client.ConfigServicePropertySourceLocator Located environment: name=bigData-service-system, profiles=[dev], label=null, version=null, state=null
-2022-11-16 14:18:11 INFO  bigData-service-system main org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration Located property source: [BootstrapPropertySource {name='bootstrapProperties-classpath:/config/bigData-service-system-dev.yml'}, BootstrapPropertySource {name='bootstrapProperties-classpath:/config/application-dev.yml'}]
-2022-11-16 14:18:11 INFO  bigData-service-system main com.bigData.service.system.BigDataSystemApplication The following profiles are active: dev
-2022-11-16 14:18:12 INFO  bigData-service-system main org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode!
-2022-11-16 14:18:12 INFO  bigData-service-system main org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2022-11-16 14:18:12 INFO  bigData-service-system main org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 22ms. Found 0 Redis repository interfaces.
-2022-11-16 14:18:13 INFO  bigData-service-system main org.springframework.cloud.context.scope.GenericScope BeanFactory id=0bba28af-88b4-32b9-bd02-e269cbe4dd38
-2022-11-16 14:18:13 INFO  bigData-service-system main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2022-11-16 14:18:13 INFO  bigData-service-system main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$f2e8f0cb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2022-11-16 14:18:13 INFO  bigData-service-system main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2022-11-16 14:18:13 INFO  bigData-service-system main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@216372b7' of type [org.springframework.security.oauth2.provider.expression.OAuth2MethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2022-11-16 14:18:13 INFO  bigData-service-system main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2022-11-16 14:18:13 INFO  bigData-service-system main io.undertow.servlet Initializing Spring embedded WebApplicationContext
-2022-11-16 14:18:13 INFO  bigData-service-system main org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 2227 ms
-2022-11-16 14:18:14 INFO  bigData-service-system main com.netflix.config.sources.URLConfigurationSource To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2022-11-16 14:18:14 INFO  bigData-service-system main com.netflix.config.DynamicPropertyFactory DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@38732372
-2022-11-16 14:18:14 INFO  bigData-service-system main org.springframework.boot.actuate.endpoint.web.ServletEndpointRegistrar Registered '/actuator/hystrix.stream' to hystrix.stream-actuator-endpoint
-2022-11-16 14:18:14 INFO  bigData-service-system main com.zaxxer.hikari.HikariDataSource mysql - Starting...
-2022-11-16 14:18:14 INFO  bigData-service-system main com.zaxxer.hikari.HikariDataSource mysql - Start completed.
-2022-11-16 14:18:14 INFO  bigData-service-system main com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource - load a datasource named [mysql] success
-2022-11-16 14:18:14 INFO  bigData-service-system main com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource initial loaded [1] datasource,primary datasource named [mysql]
-2022-11-16 14:18:16 INFO  bigData-service-system main org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver Exposing 18 endpoint(s) beneath base path '/actuator'
-2022-11-16 14:18:16 INFO  bigData-service-system main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService
-2022-11-16 14:18:16 INFO  bigData-service-system main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'taskExecutor'
-2022-11-16 14:18:17 INFO  bigData-service-system main springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2022-11-16 14:18:17 INFO  bigData-service-system main com.netflix.config.sources.URLConfigurationSource To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2022-11-16 14:18:18 INFO  bigData-service-system main org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration 
-
-Using generated security password: 46de5ecc-cd03-4180-8860-944d4ccca9a9
-
-2022-11-16 14:18:18 INFO  bigData-service-system main org.springframework.security.web.DefaultSecurityFilterChain Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@43165282, org.springframework.security.web.context.SecurityContextPersistenceFilter@7caa5387, org.springframework.security.web.header.HeaderWriterFilter@19a2b224, org.springframework.security.web.authentication.logout.LogoutFilter@dab0a6c, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@5710f755, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6f5ae4e1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7ecf001f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2976d625, org.springframework.security.web.session.SessionManagementFilter@2a01c55, org.springframework.security.web.access.ExceptionTranslationFilter@5632bed3, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4698ae6]
-2022-11-16 14:18:18 INFO  bigData-service-system main org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration Eureka HTTP Client uses Jersey
-2022-11-16 14:18:18 INFO  bigData-service-system main org.springframework.cloud.netflix.eureka.InstanceInfoFactory Setting initial instance status as: STARTING
-2022-11-16 14:18:18 INFO  bigData-service-system main com.netflix.discovery.DiscoveryClient Initializing Eureka in region us-east-1
-2022-11-16 14:18:18 INFO  bigData-service-system main com.netflix.discovery.provider.DiscoveryJerseyProvider Using JSON encoding codec LegacyJacksonJson
-2022-11-16 14:18:18 INFO  bigData-service-system main com.netflix.discovery.provider.DiscoveryJerseyProvider Using JSON decoding codec LegacyJacksonJson
-2022-11-16 14:18:18 INFO  bigData-service-system main com.netflix.discovery.provider.DiscoveryJerseyProvider Using XML encoding codec XStreamXml
-2022-11-16 14:18:18 INFO  bigData-service-system main com.netflix.discovery.provider.DiscoveryJerseyProvider Using XML decoding codec XStreamXml
-2022-11-16 14:18:19 INFO  bigData-service-system main com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Resolving eureka endpoints via configuration
-2022-11-16 14:18:19 INFO  bigData-service-system main com.netflix.discovery.DiscoveryClient Disable delta property : false
-2022-11-16 14:18:19 INFO  bigData-service-system main com.netflix.discovery.DiscoveryClient Single vip registry refresh property : null
-2022-11-16 14:18:19 INFO  bigData-service-system main com.netflix.discovery.DiscoveryClient Force full registry fetch : false
-2022-11-16 14:18:19 INFO  bigData-service-system main com.netflix.discovery.DiscoveryClient Application is null : false
-2022-11-16 14:18:19 INFO  bigData-service-system main com.netflix.discovery.DiscoveryClient Registered Applications size is zero : true
-2022-11-16 14:18:19 INFO  bigData-service-system main com.netflix.discovery.DiscoveryClient Application version is -1: true
-2022-11-16 14:18:19 INFO  bigData-service-system main com.netflix.discovery.DiscoveryClient Getting all instance registry info from the eureka server
-2022-11-16 14:18:19 INFO  bigData-service-system main com.netflix.discovery.DiscoveryClient The response status is 200
-2022-11-16 14:18:19 INFO  bigData-service-system main com.netflix.discovery.DiscoveryClient Starting heartbeat executor: renew interval is: 20
-2022-11-16 14:18:19 INFO  bigData-service-system main com.netflix.discovery.InstanceInfoReplicator InstanceInfoReplicator onDemand update allowed rate per min is 4
-2022-11-16 14:18:19 INFO  bigData-service-system main com.netflix.discovery.DiscoveryClient Discovery Client initialized at timestamp 1668579499131 with initial instances count: 3
-2022-11-16 14:18:19 INFO  bigData-service-system main org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry Registering application BIGDATA-SERVICE-SYSTEM with eureka with status UP
-2022-11-16 14:18:19 INFO  bigData-service-system main com.netflix.discovery.DiscoveryClient Saw local status change event StatusChangeEvent [timestamp=1668579499142, current=UP, previous=STARTING]
-2022-11-16 14:18:19 INFO  bigData-service-system DiscoveryClient-InstanceInfoReplicator-0 com.netflix.discovery.DiscoveryClient DiscoveryClient_BIGDATA-SERVICE-SYSTEM/192.168.9.67:bigData-service-system:8810: registering service...
-2022-11-16 14:18:19 INFO  bigData-service-system main io.undertow starting server: Undertow - 2.1.4.Final
-2022-11-16 14:18:19 INFO  bigData-service-system main org.xnio XNIO version 3.8.0.Final
-2022-11-16 14:18:19 INFO  bigData-service-system main org.xnio.nio XNIO NIO Implementation Version 3.8.0.Final
-2022-11-16 14:18:19 INFO  bigData-service-system DiscoveryClient-InstanceInfoReplicator-0 com.netflix.discovery.DiscoveryClient DiscoveryClient_BIGDATA-SERVICE-SYSTEM/192.168.9.67:bigData-service-system:8810 - registration status: 204
-2022-11-16 14:18:19 INFO  bigData-service-system main org.jboss.threads JBoss Threads version 3.1.0.Final
-2022-11-16 14:18:19 INFO  bigData-service-system main org.springframework.boot.web.embedded.undertow.UndertowWebServer Undertow started on port(s) 8810 (http)
-2022-11-16 14:18:19 INFO  bigData-service-system main org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration Updating port to 8810
-2022-11-16 14:18:19 INFO  bigData-service-system main springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Context refreshed
-2022-11-16 14:18:19 INFO  bigData-service-system main springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Found 1 custom documentation plugin(s)
-2022-11-16 14:18:19 INFO  bigData-service-system main springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Scanning for api listing references
-2022-11-16 14:18:19 INFO  bigData-service-system main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: deletePostBatchUsingDELETE_1
-2022-11-16 14:18:19 INFO  bigData-service-system main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: getPostListUsingGET_1
-2022-11-16 14:18:19 INFO  bigData-service-system main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: deletePostBatchUsingDELETE_2
-2022-11-16 14:18:19 INFO  bigData-service-system main com.bigData.service.system.BigDataSystemApplication Started BigDataSystemApplication in 9.558 seconds (JVM running for 10.45)
-2022-11-16 14:18:19 INFO  bigData-service-system RMI TCP Connection(3)-127.0.0.1 io.undertow.servlet Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-11-16 14:18:19 INFO  bigData-service-system RMI TCP Connection(3)-127.0.0.1 org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
-2022-11-16 14:18:20 INFO  bigData-service-system RMI TCP Connection(3)-127.0.0.1 org.springframework.web.servlet.DispatcherServlet Completed initialization in 12 ms
-2022-11-16 14:18:20 INFO  bigData-service-system RMI TCP Connection(2)-127.0.0.1 org.springframework.cloud.config.client.ConfigServicePropertySourceLocator Fetching config from server at : http://localhost:8611/
-2022-11-16 14:18:20 INFO  bigData-service-system RMI TCP Connection(2)-127.0.0.1 org.springframework.cloud.config.client.ConfigServicePropertySourceLocator Located environment: name=bigData-service-system, profiles=[dev], label=null, version=null, state=null
-2022-11-16 14:23:19 INFO  bigData-service-system AsyncResolver-bootstrap-executor-0 com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Resolving eureka endpoints via configuration
-2022-11-16 14:23:30 INFO  bigData-service-system XNIO-1 task-1 org.springframework.cloud.config.client.ConfigServicePropertySourceLocator Fetching config from server at : http://localhost:8611/
-2022-11-16 14:23:30 INFO  bigData-service-system XNIO-1 task-1 org.springframework.cloud.config.client.ConfigServicePropertySourceLocator Located environment: name=bigData-service-system, profiles=[dev], label=null, version=null, state=null
-2022-11-16 14:28:19 INFO  bigData-service-system AsyncResolver-bootstrap-executor-0 com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Resolving eureka endpoints via configuration
-2022-11-16 14:28:50 INFO  bigData-service-system XNIO-1 task-2 org.springframework.cloud.config.client.ConfigServicePropertySourceLocator Fetching config from server at : http://localhost:8611/
-2022-11-16 14:28:50 INFO  bigData-service-system XNIO-1 task-2 org.springframework.cloud.config.client.ConfigServicePropertySourceLocator Located environment: name=bigData-service-system, profiles=[dev], label=null, version=null, state=null
-2022-11-16 14:33:18 INFO  bigData-service-system AsyncResolver-bootstrap-executor-0 com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Resolving eureka endpoints via configuration
-2022-11-16 14:34:10 INFO  bigData-service-system XNIO-1 task-1 org.springframework.cloud.config.client.ConfigServicePropertySourceLocator Fetching config from server at : http://localhost:8611/
-2022-11-16 14:34:10 INFO  bigData-service-system XNIO-1 task-1 org.springframework.cloud.config.client.ConfigServicePropertySourceLocator Located environment: name=bigData-service-system, profiles=[dev], label=null, version=null, state=null
-2022-11-16 14:38:18 INFO  bigData-service-system AsyncResolver-bootstrap-executor-0 com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Resolving eureka endpoints via configuration
-2022-11-16 14:39:30 INFO  bigData-service-system XNIO-1 task-2 org.springframework.cloud.config.client.ConfigServicePropertySourceLocator Fetching config from server at : http://localhost:8611/
-2022-11-16 14:39:30 INFO  bigData-service-system XNIO-1 task-2 org.springframework.cloud.config.client.ConfigServicePropertySourceLocator Located environment: name=bigData-service-system, profiles=[dev], label=null, version=null, state=null
-2022-11-16 14:43:18 INFO  bigData-service-system AsyncResolver-bootstrap-executor-0 com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Resolving eureka endpoints via configuration
-2022-11-16 14:44:50 INFO  bigData-service-system XNIO-1 task-1 org.springframework.cloud.config.client.ConfigServicePropertySourceLocator Fetching config from server at : http://localhost:8611/
-2022-11-16 14:44:50 INFO  bigData-service-system XNIO-1 task-1 org.springframework.cloud.config.client.ConfigServicePropertySourceLocator Located environment: name=bigData-service-system, profiles=[dev], label=null, version=null, state=null
-2022-11-16 14:48:03 INFO  bigData-service-system XNIO-1 task-2 com.bigData.common.security.config.DataSecurityInnerAspect feign内部接口访问 loginByUsername 不鉴权处理
-2022-11-16 14:48:18 INFO  bigData-service-system AsyncResolver-bootstrap-executor-0 com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Resolving eureka endpoints via configuration
-2022-11-16 14:49:32 INFO  bigData-service-system XNIO-1 task-2 com.bigData.common.security.config.DataSecurityInnerAspect feign内部接口访问 loginByUsername 不鉴权处理
-2022-11-16 14:50:10 INFO  bigData-service-system XNIO-1 task-2 org.springframework.cloud.config.client.ConfigServicePropertySourceLocator Fetching config from server at : http://localhost:8611/
-2022-11-16 14:50:10 INFO  bigData-service-system XNIO-1 task-2 org.springframework.cloud.config.client.ConfigServicePropertySourceLocator Located environment: name=bigData-service-system, profiles=[dev], label=null, version=null, state=null
-2022-11-16 14:52:30 INFO  bigData-service-system XNIO-1 task-2 com.bigData.common.security.config.DataSecurityInnerAspect feign内部接口访问 loginByUsername 不鉴权处理
-2022-11-16 14:53:18 INFO  bigData-service-system AsyncResolver-bootstrap-executor-0 com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Resolving eureka endpoints via configuration
-2022-11-16 14:55:30 INFO  bigData-service-system XNIO-1 task-1 org.springframework.cloud.config.client.ConfigServicePropertySourceLocator Fetching config from server at : http://localhost:8611/
-2022-11-16 14:55:30 INFO  bigData-service-system XNIO-1 task-1 org.springframework.cloud.config.client.ConfigServicePropertySourceLocator Located environment: name=bigData-service-system, profiles=[dev], label=null, version=null, state=null
-2022-11-16 14:58:18 INFO  bigData-service-system AsyncResolver-bootstrap-executor-0 com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Resolving eureka endpoints via configuration
-2022-11-16 15:00:50 INFO  bigData-service-system XNIO-1 task-2 org.springframework.cloud.config.client.ConfigServicePropertySourceLocator Fetching config from server at : http://localhost:8611/
-2022-11-16 15:00:50 INFO  bigData-service-system XNIO-1 task-2 org.springframework.cloud.config.client.ConfigServicePropertySourceLocator Located environment: name=bigData-service-system, profiles=[dev], label=null, version=null, state=null
-2022-11-16 15:03:18 INFO  bigData-service-system AsyncResolver-bootstrap-executor-0 com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Resolving eureka endpoints via configuration
-2022-11-16 15:06:10 INFO  bigData-service-system XNIO-1 task-1 org.springframework.cloud.config.client.ConfigServicePropertySourceLocator Fetching config from server at : http://localhost:8611/
-2022-11-16 15:06:10 INFO  bigData-service-system XNIO-1 task-1 org.springframework.cloud.config.client.ConfigServicePropertySourceLocator Located environment: name=bigData-service-system, profiles=[dev], label=null, version=null, state=null
-2022-11-16 15:08:18 INFO  bigData-service-system AsyncResolver-bootstrap-executor-0 com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Resolving eureka endpoints via configuration
-2022-11-16 15:11:30 INFO  bigData-service-system XNIO-1 task-1 org.springframework.cloud.config.client.ConfigServicePropertySourceLocator Fetching config from server at : http://localhost:8611/
-2022-11-16 15:11:30 INFO  bigData-service-system XNIO-1 task-1 org.springframework.cloud.config.client.ConfigServicePropertySourceLocator Located environment: name=bigData-service-system, profiles=[dev], label=null, version=null, state=null
-2022-11-16 15:13:18 INFO  bigData-service-system AsyncResolver-bootstrap-executor-0 com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Resolving eureka endpoints via configuration
-2022-11-16 15:16:40 INFO  bigData-service-system XNIO-1 task-2 org.springframework.cloud.config.client.ConfigServicePropertySourceLocator Fetching config from server at : http://localhost:8611/
-2022-11-16 15:16:40 INFO  bigData-service-system XNIO-1 task-2 org.springframework.cloud.config.client.ConfigServicePropertySourceLocator Located environment: name=bigData-service-system, profiles=[dev], label=null, version=null, state=null
-2022-11-16 15:18:18 INFO  bigData-service-system AsyncResolver-bootstrap-executor-0 com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Resolving eureka endpoints via configuration
-2022-11-16 15:22:00 INFO  bigData-service-system XNIO-1 task-2 org.springframework.cloud.config.client.ConfigServicePropertySourceLocator Fetching config from server at : http://localhost:8611/
-2022-11-16 15:22:00 INFO  bigData-service-system XNIO-1 task-2 org.springframework.cloud.config.client.ConfigServicePropertySourceLocator Located environment: name=bigData-service-system, profiles=[dev], label=null, version=null, state=null
-2022-11-16 15:23:18 INFO  bigData-service-system AsyncResolver-bootstrap-executor-0 com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Resolving eureka endpoints via configuration
-2022-11-16 15:27:20 INFO  bigData-service-system XNIO-1 task-2 org.springframework.cloud.config.client.ConfigServicePropertySourceLocator Fetching config from server at : http://localhost:8611/
-2022-11-16 15:27:20 INFO  bigData-service-system XNIO-1 task-2 org.springframework.cloud.config.client.ConfigServicePropertySourceLocator Located environment: name=bigData-service-system, profiles=[dev], label=null, version=null, state=null
-2022-11-16 15:28:18 INFO  bigData-service-system AsyncResolver-bootstrap-executor-0 com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Resolving eureka endpoints via configuration
-2022-11-16 15:32:40 INFO  bigData-service-system XNIO-1 task-2 org.springframework.cloud.config.client.ConfigServicePropertySourceLocator Fetching config from server at : http://localhost:8611/
-2022-11-16 15:32:40 INFO  bigData-service-system XNIO-1 task-2 org.springframework.cloud.config.client.ConfigServicePropertySourceLocator Located environment: name=bigData-service-system, profiles=[dev], label=null, version=null, state=null
-2022-11-16 15:33:18 INFO  bigData-service-system AsyncResolver-bootstrap-executor-0 com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Resolving eureka endpoints via configuration
-2022-11-16 15:34:38 INFO  bigData-service-system SpringContextShutdownHook org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry Unregistering application BIGDATA-SERVICE-SYSTEM with eureka with status DOWN
-2022-11-16 15:34:38 INFO  bigData-service-system DiscoveryClient-InstanceInfoReplicator-0 com.netflix.discovery.DiscoveryClient DiscoveryClient_BIGDATA-SERVICE-SYSTEM/192.168.9.67:bigData-service-system:8810: registering service...
-2022-11-16 15:34:38 INFO  bigData-service-system DiscoveryClient-InstanceInfoReplicator-0 com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8610/eureka/} exception=java.net.ConnectException: Connection refused (Connection refused) stacktrace=com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
-	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
-	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
-	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
-	at com.sun.jersey.api.client.Client.handle(Client.java:652)
-	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
-	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
-	at com.sun.jersey.api.client.WebResource$Builder.post(WebResource.java:570)
-	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.register(AbstractJerseyEurekaHttpClient.java:57)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
-	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
-	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:91)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
-	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
-	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
-	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:876)
-	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
-	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: java.net.ConnectException: Connection refused (Connection refused)
-	at java.net.PlainSocketImpl.socketConnect(Native Method)
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-	at java.net.Socket.connect(Socket.java:607)
-	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
-	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
-	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
-	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)
-	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
-	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
-	... 29 more
-
-2022-11-16 15:34:38 INFO  bigData-service-system SpringContextShutdownHook io.undertow stopping server: Undertow - 2.1.4.Final
-2022-11-16 15:34:38 INFO  bigData-service-system DiscoveryClient-InstanceInfoReplicator-0 com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8610/eureka/}, exception=java.net.ConnectException: Connection refused (Connection refused) stacktrace=com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
-	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
-	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
-	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
-	at com.sun.jersey.api.client.Client.handle(Client.java:652)
-	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
-	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
-	at com.sun.jersey.api.client.WebResource$Builder.post(WebResource.java:570)
-	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.register(AbstractJerseyEurekaHttpClient.java:57)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
-	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
-	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
-	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
-	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
-	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
-	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:876)
-	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
-	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: java.net.ConnectException: Connection refused (Connection refused)
-	at java.net.PlainSocketImpl.socketConnect(Native Method)
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-	at java.net.Socket.connect(Socket.java:607)
-	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
-	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
-	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
-	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)
-	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
-	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
-	... 30 more
-
-2022-11-16 15:34:38 INFO  bigData-service-system SpringContextShutdownHook io.undertow.servlet Destroying Spring FrameworkServlet 'dispatcherServlet'
-2022-11-16 15:34:38 INFO  bigData-service-system SpringContextShutdownHook org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Shutting down ExecutorService 'taskExecutor'
-2022-11-16 15:34:38 INFO  bigData-service-system SpringContextShutdownHook com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource start closing ....
-2022-11-16 15:34:38 INFO  bigData-service-system SpringContextShutdownHook com.zaxxer.hikari.HikariDataSource mysql - Shutdown initiated...
-2022-11-16 15:34:38 INFO  bigData-service-system SpringContextShutdownHook com.zaxxer.hikari.HikariDataSource mysql - Shutdown completed.
-2022-11-16 15:34:38 INFO  bigData-service-system SpringContextShutdownHook com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource all closed success,bye
-2022-11-16 15:34:38 INFO  bigData-service-system SpringContextShutdownHook com.netflix.discovery.DiscoveryClient Shutting down DiscoveryClient ...
-2022-11-16 15:34:39 INFO  bigData-service-system DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8610/eureka/} exception=java.net.ConnectException: Connection refused (Connection refused) stacktrace=com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
-	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
-	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
-	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
-	at com.sun.jersey.api.client.Client.handle(Client.java:652)
-	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
-	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
-	at com.sun.jersey.api.client.WebResource$Builder.get(WebResource.java:509)
-	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getApplicationsInternal(AbstractJerseyEurekaHttpClient.java:196)
-	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getDelta(AbstractJerseyEurekaHttpClient.java:172)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
-	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
-	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:91)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
-	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
-	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
-	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1135)
-	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1016)
-	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1535)
-	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1502)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: java.net.ConnectException: Connection refused (Connection refused)
-	at java.net.PlainSocketImpl.socketConnect(Native Method)
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-	at java.net.Socket.connect(Socket.java:607)
-	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
-	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
-	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
-	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)
-	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
-	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
-	... 29 more
-
-2022-11-16 15:34:39 INFO  bigData-service-system DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8610/eureka/}, exception=java.net.ConnectException: Connection refused (Connection refused) stacktrace=com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
-	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
-	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
-	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
-	at com.sun.jersey.api.client.Client.handle(Client.java:652)
-	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
-	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
-	at com.sun.jersey.api.client.WebResource$Builder.get(WebResource.java:509)
-	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getApplicationsInternal(AbstractJerseyEurekaHttpClient.java:196)
-	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getDelta(AbstractJerseyEurekaHttpClient.java:172)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
-	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
-	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
-	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
-	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
-	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
-	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1135)
-	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1016)
-	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1535)
-	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1502)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: java.net.ConnectException: Connection refused (Connection refused)
-	at java.net.PlainSocketImpl.socketConnect(Native Method)
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-	at java.net.Socket.connect(Socket.java:607)
-	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
-	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
-	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
-	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)
-	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
-	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
-	... 30 more
-
-2022-11-16 15:34:39 INFO  bigData-service-system DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.DiscoveryClient DiscoveryClient_BIGDATA-SERVICE-SYSTEM/192.168.9.67:bigData-service-system:8810 - was unable to refresh its cache! This periodic background refresh will be retried in 3 seconds. status = Cannot execute request on any known server stacktrace = com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
-	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
-	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
-	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1135)
-	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1016)
-	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1535)
-	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1502)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-
-2022-11-16 15:34:40 INFO  bigData-service-system DiscoveryClient-HeartbeatExecutor-0 com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8610/eureka/}, exception=java.net.ConnectException: Connection refused (Connection refused) stacktrace=com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
-	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
-	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
-	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
-	at com.sun.jersey.api.client.Client.handle(Client.java:652)
-	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
-	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
-	at com.sun.jersey.api.client.WebResource$Builder.put(WebResource.java:529)
-	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.sendHeartBeat(AbstractJerseyEurekaHttpClient.java:103)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
-	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
-	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
-	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
-	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
-	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
-	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:893)
-	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1461)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: java.net.ConnectException: Connection refused (Connection refused)
-	at java.net.PlainSocketImpl.socketConnect(Native Method)
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-	at java.net.Socket.connect(Socket.java:607)
-	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
-	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
-	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
-	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)
-	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
-	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
-	... 27 more
-
-2022-11-16 15:34:41 INFO  bigData-service-system SpringContextShutdownHook com.netflix.discovery.DiscoveryClient Unregistering ...
-2022-11-16 15:34:41 INFO  bigData-service-system SpringContextShutdownHook com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8610/eureka/}, exception=java.net.ConnectException: Connection refused (Connection refused) stacktrace=com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
-	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
-	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
-	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
-	at com.sun.jersey.api.client.Client.handle(Client.java:652)
-	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
-	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
-	at com.sun.jersey.api.client.WebResource$Builder.delete(WebResource.java:591)
-	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.cancel(AbstractJerseyEurekaHttpClient.java:77)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
-	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
-	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
-	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
-	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
-	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
-	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:972)
-	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:948)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:347)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:177)
-	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:242)
-	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:235)
-	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:403)
-	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:142)
-	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:258)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1092)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1085)
-	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1061)
-	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1030)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:170)
-	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:949)
-Caused by: java.net.ConnectException: Connection refused (Connection refused)
-	at java.net.PlainSocketImpl.socketConnect(Native Method)
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-	at java.net.Socket.connect(Socket.java:607)
-	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
-	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
-	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
-	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)
-	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
-	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
-	... 43 more
-
-2022-11-16 15:34:41 INFO  bigData-service-system SpringContextShutdownHook com.netflix.discovery.DiscoveryClient Completed shut down of DiscoveryClient
+2022-11-17 17:59:25 INFO  bigData-service-system SpringContextShutdownHook com.netflix.discovery.DiscoveryClient Completed shut down of DiscoveryClient
