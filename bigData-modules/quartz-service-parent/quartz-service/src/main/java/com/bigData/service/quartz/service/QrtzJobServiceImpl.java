@@ -16,9 +16,6 @@ import org.springframework.transaction.annotation.Transactional;
  * <p>
  * 定时任务信息表 服务实现类
  * </p>
- *
- * @author yuwei
- * @since 2020-05-14
  */
 @Service
 @Transactional(propagation = Propagation.SUPPORTS, readOnly = true, rollbackFor = Exception.class)

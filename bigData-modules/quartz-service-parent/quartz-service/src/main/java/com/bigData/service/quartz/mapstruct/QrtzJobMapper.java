@@ -10,9 +10,6 @@ import org.mapstruct.Mapper;
  * <p>
  * 定时任务信息表 Mapper 实体映射
  * </p>
- *
- * @author yuwei
- * @since 2020-05-14
  */
 @Mapper(componentModel = "spring")
 public interface QrtzJobMapper extends EntityMapper<QrtzJobDto, QrtzJobEntity, QrtzJobVo> {

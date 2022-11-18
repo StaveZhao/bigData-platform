@@ -10,9 +10,6 @@ import java.util.List;
  * <p>
  * 定时任务日志信息表 服务类
  * </p>
- *
- * @author yuwei
- * @since 2020-05-14
  */
 public interface QrtzJobLogService extends BaseService<QrtzJobLogEntity> {
 

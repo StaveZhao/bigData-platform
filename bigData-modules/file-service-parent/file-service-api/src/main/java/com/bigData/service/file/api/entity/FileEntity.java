@@ -10,9 +10,6 @@ import lombok.experimental.Accessors;
  * <p>
  *
  * </p>
- *
- * @author yuwei
- * @since 2019-09-17
  */
 @Data
 @EqualsAndHashCode(callSuper = true)

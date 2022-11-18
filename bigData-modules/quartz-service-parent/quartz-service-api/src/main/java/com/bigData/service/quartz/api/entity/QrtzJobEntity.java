@@ -10,9 +10,6 @@ import lombok.experimental.Accessors;
  * <p>
  * 定时任务信息表
  * </p>
- *
- * @author yuwei
- * @since 2020-05-14
  */
 @Data
 @EqualsAndHashCode(callSuper = true)

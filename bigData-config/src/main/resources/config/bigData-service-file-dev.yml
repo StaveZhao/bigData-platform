@@ -74,14 +74,14 @@ swagger:
 
 data:
   file-server:
-    type: local
+    type: qiniu
     #oss配置
     oss:
-      access-key: tpi8mObnfzZi4ggBX8Bw7zydjoTQ0WeML3RkPKsX
-      access-key-secret: HZBXmSyUTy-haYp0KbBTtsil-GoKjVS2kDKT8Yow
-      bucket-name: public-oss
-      domain-name: http://pkqtmn0p1.bkt.clouddn.com
+      access-key: qjsmfnShE1Y5SSizoQ69O_QRZ2RjRVUEULNB0fBt
+      access-key-secret: GM6DxdhIbYdZ8hZ9VW7_uDkia-oPL3NSzlqPVt8_
+      bucket-name: stave-zhao
+      domain-name: http://rliu716ht.hb-bkt.clouddn.com
     #local配置
     local:
-      path: "F:\\uploadfile"
+      path: "/Users/stave_zhao/Desktop/code"
       prefix: "fileView"

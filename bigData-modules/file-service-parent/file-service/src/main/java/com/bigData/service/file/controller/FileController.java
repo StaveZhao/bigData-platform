@@ -26,9 +26,6 @@ import java.util.stream.Collectors;
  * <p>
  *  前端控制器
  * </p>
- *
- * @author yuwei
- * @since 2019-09-17
  */
 @Api(tags = {"文件管理"})
 @RestController

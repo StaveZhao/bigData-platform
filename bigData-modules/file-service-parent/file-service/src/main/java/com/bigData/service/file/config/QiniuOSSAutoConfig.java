@@ -39,7 +39,7 @@ public class QiniuOSSAutoConfig {
      */
     @Bean
     public com.qiniu.storage.Configuration qiniuConfig() {
-        return new com.qiniu.storage.Configuration(Zone.zone2());
+        return new com.qiniu.storage.Configuration(Zone.zone1());
     }
 
     /**

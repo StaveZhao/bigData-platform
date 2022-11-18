@@ -8,9 +8,6 @@ import com.bigData.service.quartz.api.entity.QrtzJobEntity;
  * <p>
  * 定时任务信息表 服务类
  * </p>
- *
- * @author yuwei
- * @since 2020-05-14
  */
 public interface QrtzJobService extends BaseService<QrtzJobEntity> {
 

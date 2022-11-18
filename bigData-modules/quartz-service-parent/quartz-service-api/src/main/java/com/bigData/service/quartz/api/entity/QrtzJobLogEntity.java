@@ -15,9 +15,6 @@ import java.time.LocalDateTime;
  * <p>
  * 定时任务日志信息表
  * </p>
- *
- * @author yuwei
- * @since 2020-05-14
  */
 @Data
 @Accessors(chain = true)

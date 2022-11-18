@@ -10,9 +10,6 @@ import java.time.LocalDateTime;
  * <p>
  * 定时任务信息表 实体VO
  * </p>
- *
- * @author yuwei
- * @since 2020-05-14
  */
 @Data
 public class QrtzJobVo implements Serializable {

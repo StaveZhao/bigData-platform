@@ -105,13 +105,35 @@ bigData_cloud_quartz
 
 依次启动bigData-eureka、bigData-config、bigData-gateway、bigData-auth、system-service、quartz-service下的服务
 
-补充：
+**补充：**
 
 ```
 在启动system-service的时候有可能会报错
 解决方法：
-Build->compiler->User Local 
+Build->compiler->User Local
+
+文件系统file-service使用过程中要注意的：
+1、修改配置文件中的配置信息为自己的信息（这里需要注意type有三种类型，每一种代表一种文件存储位置：local代表存储到本地，aliyun代表存储到阿里云服务器上，qiniu代表存储在七牛云服务器上）
+2、如果使用的是七牛云，需要修改 QiniuOSSAutoConfig 类中的qiniuConfig。如下
+    /**
+     * 华北机房
+     */
+    @Bean
+    public com.qiniu.storage.Configuration qiniuConfig() {
+        return new com.qiniu.storage.Configuration(Zone.zone1());
+    }
+    
+区域    编码
+华东    Zone.zone0
+华北    Zone.zone1
+华南    Zone.zone2
+北美    Zone.zoneNa0
+根据自己选择的存储服务器所在区域进行对应修改
 ```
+
+
+
+
 
 ##### 4、启动前端
 

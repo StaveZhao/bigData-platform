@@ -11,9 +11,6 @@ import java.io.Serializable;
  * <p>
  * 定时任务日志信息表 实体DTO
  * </p>
- *
- * @author yuwei
- * @since 2020-05-14
  */
 @ApiModel(value = "定时任务日志信息表Model")
 @Data

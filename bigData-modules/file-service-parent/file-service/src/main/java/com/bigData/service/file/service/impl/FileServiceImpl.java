@@ -18,9 +18,6 @@ import java.util.Date;
  * <p>
  *  服务实现类
  * </p>
- *
- * @author yuwei
- * @since 2019-09-17
  */
 @Service
 @Transactional(propagation = Propagation.SUPPORTS, readOnly = true, rollbackFor = Exception.class)

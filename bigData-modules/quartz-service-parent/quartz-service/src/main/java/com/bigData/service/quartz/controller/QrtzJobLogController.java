@@ -30,9 +30,6 @@ import java.util.stream.Collectors;
  * <p>
  * 定时任务日志信息表 前端控制器
  * </p>
- *
- * @author yuwei
- * @since 2020-05-14
  */
 @Api(tags = {"定时任务日志信息表"})
 @RestController
